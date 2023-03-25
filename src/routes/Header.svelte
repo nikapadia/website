@@ -4,19 +4,18 @@
 </script>
 
 <header>
-	<div class="corner-left">
-		<a href="{base}/">
-			Nilay Kapadia
-		</a>
-	</div>
-
-	<nav>
+  <nav>
+    <div class="name">
+      <a href="{base}/">
+        Nilay Kapadia
+      </a>
+    </div>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<li>
 				<a href="{base}/">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="{base}/about">About</a>
+			<li>
+				<a href="{base}/">About</a>
 			</li>
 		</ul>
 	</nav>
@@ -26,30 +25,33 @@
 <style>
 	header {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
+    align-items: center;
+    width: 100%;
 	}
 
-
-  .corner-left {
+  .name {
     margin: 16px;
     text-decoration: none;
 	}
   
-  .corner-left a {
+  .name a {
     color:rgb(0, 0, 0);
     font-size: 2.25em;
     font-family: var(--font-cursive);
 	}
 
-  .corner-left a:hover {
+  .name a:hover {
     color:rgb(97, 97, 97);
     text-decoration: none;
 	}
 
 	nav {
+    position: relative;
 		display: flex;
-		justify-content: center;
-		/* --background: rgba(255, 255, 255, 0.7); */
+		justify-content: space-around;
+    align-items: center;
+    width: 75%;
 	}
 
 	ul {
@@ -69,10 +71,6 @@
 		height: 100%;
 	}
 
-	li[aria-current='page'] {
-    color:rgb(216, 16, 16);
-	}
-
 	nav a {
 		display: flex;
 		height: 100%;
@@ -89,6 +87,27 @@
 	}
 
 	a:hover {
-		color: var(--color-theme-1);
+		color: #0d7680;
 	}
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    ul {
+      display: none;
+    }
+
+    nav {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .name {
+      margin: 0;
+    }
+  }
 </style>

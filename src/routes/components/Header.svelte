@@ -17,6 +17,9 @@
 			<li>
 				<a href="{base}/">About</a>
 			</li>
+			<li>
+				<a href="https://drive.google.com/file/d/1lAd7kWT1jwqqzcU4-cU3L5jAtnbcnsae/view" target="_blank" rel="noreferrer">Resume</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -51,7 +54,7 @@
 		display: flex;
 		justify-content: space-around;
     align-items: center;
-    width: 75%;
+    width: 80%;
 	}
 
 	ul {

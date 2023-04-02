@@ -11,14 +11,15 @@
 <style>
   footer {
     height: 50px;
-    background-color: #cfc0b2;
+    background-color: #2d333b;
     padding: 15px;
     text-align: center;
   }
   .github-image {
+    transition: all .2s ease-in-out; 
     height: 50px;
   }
   .github-image:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.7);
   }
 </style>

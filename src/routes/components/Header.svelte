@@ -39,9 +39,9 @@
 	}
   
   .name a {
-    color:rgb(0, 0, 0);
+    color: white;
     font-size: 2.25em;
-    font-family: var(--font-cursive);
+    font-family: var(--font-cursive2);
 	}
 
   .name a:hover {
@@ -79,7 +79,7 @@
 		height: 100%;
 		align-items: center;
 		padding: 0 0.5rem;
-		color: var(--color-text);
+		color: white;
     font-family: var(--font-head);
 		font-weight: 700;
 		font-size: 1rem;

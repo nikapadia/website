@@ -94,6 +94,7 @@
   .main {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 0;
     margin: 0 0 0 0;
     padding: 0 0 0 0;

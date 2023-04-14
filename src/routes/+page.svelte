@@ -1,20 +1,21 @@
 <script>
   import Icon from '@iconify/svelte';
-  import graduationCap from '@iconify/icons-ph/graduation-cap';
-  import mapTrifold from '@iconify/icons-ph/map-trifold';
-  import cover_photo from '$lib/images/ori.png';
-  import rcos from '$lib/images/rcos.png';
-  import poly from '$lib/images/poly.png';
-  import challenge_camp from '$lib/images/challenge_camp.png';
-  import dae from '$lib/images/dae.png';
-  import wordletogether from '$lib/images/wordletogether.png';
-  import edgemont_robotics from '$lib/images/edgemont_robotics.png';
-  import degree_doctor from '$lib/images/degree_doctor.webp';
+  import icon_graduationCap from '@iconify/icons-ph/graduation-cap-duotone';
+  import icon_mapTrifold from '@iconify/icons-ph/map-trifold-duotone';
+  import icon_building from '@iconify/icons-ph/buildings-duotone';
+  import image_coverPhoto from '$lib/images/ori.webp';
+  import image_rcos from '$lib/images/rcos.webp';
+  import image_poly from '$lib/images/poly.webp';
+  import image_challengeCamp from '$lib/images/challenge_camp.webp';
+  import image_dae from '$lib/images/dae.webp';
+  import image_wordleTogether from '$lib/images/wordletogether.webp';
+  import image_edgemontRobotics from '$lib/images/edgemont_robotics.webp';
+  import image_degreeDoctor from '$lib/images/degree_doctor.webp';
 </script>
 
 <svelte:head>
 	<title>Nilay Kapadia</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Hey! I'm Nilay, a freshman computer science student as Rensselaer Polytechnic Institute." />
 </svelte:head>
 
 <section>
@@ -22,15 +23,17 @@
     <div class="profile">
       <div class="picture">
         <picture>
-          <img src="{cover_photo}" alt="Cover" class="cover-photo">
+          <img src="{image_coverPhoto}" alt="Cover" class="cover-photo">
         </picture>
       </div>
       <div class="info-box">
         <h3 class="name">Nilay Kapadia</h3>
         <h3 class="username">nikapadia</h3>
         <div class="info-box-sub">
-          <div class="info-box-item"><Icon icon={graduationCap} /> Rensselaer Polytechnic Institute</div>
-          <div class="info-box-item"><Icon icon={mapTrifold} /> New York</div>
+          <!-- #c593f5 -->
+          <div class="info-box-item"><Icon icon={icon_building} width="24" color="#ece1ee"/> Rensselaer Polytechnic Institute</div>
+          <div class="info-box-item"><Icon icon={icon_graduationCap} width="24" color="#ece1ee"/> Class of 2026</div>
+          <div class="info-box-item"><Icon icon={icon_mapTrifold} width="24" color="#ece1ee"/> New York</div>
         </div>
       </div>
   
@@ -40,37 +43,37 @@
         <div class="org-list">
           <div class="org-item">
             <a href="https://degreedoctor.org/" target="_blank" rel="noreferrer">
-              <img src="{degree_doctor}" alt="Degree Doctor" class="org-item-logo-img">
+              <img src="{image_degreeDoctor}" alt="Degree Doctor" class="org-item-logo-img">
             </a>
           </div>
           <div class="org-item">
             <a href="https://new.rcos.io/" target="_blank" rel="noreferrer">
-              <img src="{rcos}" alt="RCOS" class="org-item-logo-img">
+              <img src="{image_rcos}" alt="RCOS" class="org-item-logo-img">
             </a>
           </div>
           <div class="org-item">
             <a href="https://poly.rpi.edu/" target="_blank" rel="noreferrer">
-              <img src="{poly}" alt="The Polytechnic" class="org-item-logo-img">
-            </a>
-          </div>
-          <div class="org-item">
-            <a href="https://wordletogether.com/" target="_blank" rel="noreferrer">
-              <img src="{wordletogether}" alt="WordleTogether.com" class="org-item-logo-img">
+              <img src="{image_poly}" alt="The Polytechnic" class="org-item-logo-img">
             </a>
           </div>
           <div class="org-item">
             <a href="https://challengecamps.com/" target="_blank" rel="noreferrer">
-              <img src="{challenge_camp}" alt="Challenge Camp" class="org-item-logo-img">
+              <img src="{image_challengeCamp}" alt="Challenge Camp" class="org-item-logo-img">
+            </a>
+          </div>
+          <div class="org-item">
+            <a href="https://wordletogether.com/" target="_blank" rel="noreferrer">
+              <img src="{image_wordleTogether}" alt="WordleTogether.com" class="org-item-logo-img">
             </a>
           </div>
           <div class="org-item">
             <a href="https://edgemontrobotics.github.io/" target="_blank" rel="noreferrer">
-              <img src="{edgemont_robotics}" alt="Edgemont Robotics Team" class="org-item-logo-img">
+              <img src="{image_edgemontRobotics}" alt="Edgemont Robotics Team" class="org-item-logo-img">
             </a>
           </div>
           <div class="org-item">
             <a href="https://www.thedae.com/" target="_blank" rel="noreferrer">
-              <img src="{dae}" alt="Challenge Camp" class="org-item-logo-img">
+              <img src="{image_dae}" alt="Challenge Camp" class="org-item-logo-img">
             </a>
           </div>
         </div>
@@ -78,7 +81,7 @@
     </div>
     <div class="text-box">
       <h1>Hi there!</h1>
-      <p>My name is Nilay Kapadia and I am a freshman Computer Science student as Rensselaer Polytechnic Institute.</p>
+      <p>My name is Nilay Kapadia and I am a freshman computer science student as Rensselaer Polytechnic Institute.</p>
     </div>
   </div>
 
@@ -117,14 +120,14 @@
   }
 
   .text-box p {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     padding: 0 64px 0 64px; 
-    font-family: var(--font-head);
+    font-family: var(--font-serif2);
   }
 
   .text-box h1 {
-    font-family: var(--font-cursive);
+    font-family: var(--font-cursive1);
     margin: 0;
     font-size: 4.5em;
   }
@@ -159,25 +162,27 @@
     justify-content: left;
     align-items: center;
     gap: 0.5em;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: var(--font-serif2);
     font-weight: 400;
     margin: 0 0 0.5em 0;
   }
   .name {
     margin: 20px 0 0 0;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
+    font-family: var(--font-serif1);
   }
   .username {
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 18px;
     margin: 0 0 20px 0;
+    font-family: var(--font-serif2);
   }
 
   .org-title {
     color: white;
     font-size: 20px;
-    margin: 0 0 5px 0;
+    margin: 0 0 8px 0;
+    font-family: var(--font-serif2);
   }
 
   .org-list {
@@ -219,6 +224,17 @@
     display:inline-block;
     vertical-align:middle;
     border: 2px solid gray;
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-box {
+      display: none;
+    }
   }
 
 </style>

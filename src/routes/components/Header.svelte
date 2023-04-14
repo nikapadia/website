@@ -41,7 +41,7 @@
   .name a {
     color: white;
     font-size: 2.25em;
-    font-family: var(--font-cursive2);
+    font-family: var(--font-head);
 	}
 
   .name a:hover {
@@ -80,7 +80,7 @@
 		align-items: center;
 		padding: 0 0.5rem;
 		color: white;
-    font-family: var(--font-head);
+    font-family: var(--font-serif1);
 		font-weight: 700;
 		font-size: 1rem;
 		text-transform: uppercase;
@@ -110,7 +110,7 @@
     }
 
     .name {
-      margin: 0;
+      margin: 8px 0 0 0;
     }
   }
 </style>

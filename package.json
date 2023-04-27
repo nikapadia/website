@@ -1,6 +1,9 @@
 {
-	"name": "nikapadia.github.io",
-	"version": "0.0.1",
+	"name": "@nikapadia/nikapadia.com",
+	"version": "1.0.0",
+  "author": "Nilay Kapadia",
+  "license": "MIT",
+  "description": "My personal website",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && wininit > build/.nojekyll",

@@ -47,11 +47,6 @@
             </a>
           </div>
           <div class="org-item">
-            <a href="https://new.rcos.io/" target="_blank" rel="noreferrer">
-              <img src="{image_rcos}" alt="RCOS" class="org-item-logo-img">
-            </a>
-          </div>
-          <div class="org-item">
             <a href="https://poly.rpi.edu/" target="_blank" rel="noreferrer">
               <img src="{image_poly}" alt="The Polytechnic" class="org-item-logo-img">
             </a>

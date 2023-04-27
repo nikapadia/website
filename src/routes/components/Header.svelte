@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
   import { base } from '$app/paths';
+  import resume from '$lib/content/resume.pdf';
 </script>
 
 <header>
@@ -18,7 +19,7 @@
 				<a href="{base}/">About</a>
 			</li>
 			<li>
-				<a href="https://drive.google.com/file/d/1lAd7kWT1jwqqzcU4-cU3L5jAtnbcnsae/view" target="_blank" rel="noreferrer">Resume</a>
+				<a href="{resume}" target="_blank" rel="noreferrer">Resume</a>
 			</li>
 		</ul>
 	</nav>

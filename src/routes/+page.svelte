@@ -10,6 +10,7 @@
 	import image_wordleTogether from '$lib/images/wordletogether.webp';
 	import image_edgemontRobotics from '$lib/images/edgemont_robotics.webp';
 	import image_degreeDoctor from '$lib/images/degree_doctor.webp';
+    import image_oriLong from '$lib/images/ori_long.webp';
 
 	import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
@@ -45,8 +46,14 @@
 	<title>Nilay Kapadia</title>
 	<meta
 		name="description"
-		content="Hey! I'm Nilay, a freshman computer science student as Rensselaer Polytechnic Institute."
+		content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute."
 	/>
+    <!-- Twitter -->
+    <meta property="twitter:card" content={image_oriLong}>
+    <meta property="twitter:url" content="https://nikapadia.com/">
+    <meta property="twitter:title" content="Nilay Kapadia">
+    <meta property="twitter:description" content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute.">
+    <meta property="twitter:image" content={image_coverPhoto}>
 </svelte:head>
 
 <section>

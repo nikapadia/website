@@ -121,10 +121,10 @@
 			{/if}
             {#if ready} 
                 <p transition:fly="{{ y: 25, duration: 2000 }}">
-                My name is Nilay Kapadia and I am a freshman computer science student as Rensselaer
+                My name is Nilay Kapadia and I am a sophomore computer science student at Rensselaer
                     Polytechnic Institute.
                 </p>
-                <hr />
+
             {/if}
 		</div>
 

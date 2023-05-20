@@ -1,14 +1,17 @@
 <script lang="ts">
-	import Header from './components/Header.svelte';
-	import Footer from './components/Footer.svelte';
+	import Navbar from './components/navbar.svelte';
+	import Footer from './components/footer.svelte';
+    import Infopanel from './components/infopanel.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
-	<Header />
+	<Navbar />
   
 	<main>
-    <slot />
+        <Infopanel></Infopanel>
+        <slot />
+
 	</main>
   <Footer />
 
@@ -24,12 +27,13 @@
 	main {
 		flex: 1;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+        justify-content: space-between;
 	}
 
 	@media (min-width: 480px) {

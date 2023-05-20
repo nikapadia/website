@@ -17,7 +17,7 @@
 				<a href="{base}/">About</a>
 			</li>
 			<li>
-				<a href={resume} target="_blank" rel="noreferrer">Resume</a>
+				<a href="{base}/resume">Resume</a>
 			</li>
 		</ul>
 	</nav>

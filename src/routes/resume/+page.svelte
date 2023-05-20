@@ -10,9 +10,23 @@
 	import image_challengeCamp from '$lib/images/challenge_camp.webp';
 	import image_dae from '$lib/images/dae.webp';
 	import image_edgemontRobotics from '$lib/images/edgemont_robotics.webp';
-    import image_ehs from '$lib/images/ehs.webp';
     import image_rpiSeal from '$lib/images/rpi_seal.webp';
+    import image_coverPhoto from '$lib/images/ori.webp';
 </script>
+
+<svelte:head>
+    <title>Nilay Kapadia - Resume</title>
+    <meta
+		name="description"
+		content="This is my resume. It contains my education, current work, and prior work."
+	/>
+    <!-- Twitter -->
+    <meta property="twitter:card" content={image_coverPhoto}>
+    <meta property="twitter:url" content="https://nikapadia.com/">
+    <meta property="twitter:title" content="Nilay Kapadia">
+    <meta property="twitter:description" content="This is my resume. It contains my education, current work, and prior work.">
+    <meta property="twitter:image" content={image_coverPhoto}>
+</svelte:head>
 
 <section>
 	<div class="main">
@@ -21,16 +35,13 @@
             <div class="item-header">
                 <img src={image_rpiSeal} alt="Rensselaer Polytechnic Institute Seal" class="item-image" />
                 <p class="company" style="font-size: 28px">Rensselaer Polytechnic Institute</p>
-                <a href="https://rpi.edu/" target="_blank" rel="noreferrer" class="icon-link">
-                    <Icon icon={icon_arrowSquareOutBold} width="26" />
-                </a>
             </div>
             <div class="item-subheader">
                 <p class="position">B.S. in Computer Science</p>
                 <p class="tenure">2022 - 2026</p>
             </div>            
             <ul class="education-list">
-                <li class="el-item">Relevant Coursework: Foundations of Computer Science, Computer Organization, Data Structures, Calclus I/II</li>
+                <li class="el-item">Relevant Coursework: Foundations of Computer Science, Computer Organization, Data Structures, Calculus I/II</li>
                 <li class="el-item">Awards/Honors: Rensselaer Leadership Scholarship</li>
             </ul>
         </div>
@@ -40,9 +51,6 @@
 				<div class="item-header">
 					<img src={image_poly} alt="The Polytechnic Logo" class="item-image" />
 					<p class="company">The Polytechnic</p>
-					<a href="https://poly.rpi.edu/" target="_blank" rel="noreferrer" class="icon-link">
-						<Icon icon={icon_arrowSquareOutBold} width="26" />
-					</a>
 				</div>
 				<div class="item-subheader">
 					<p class="position">News Editor</p>
@@ -63,9 +71,6 @@
 				<div class="item-header">
 					<img src={image_degreeDoctor} alt="Degree Doctor" class="item-image" />
 					<p class="company">Degree Doctor</p>
-					<a href="https://degreedoctor.org/" target="_blank" rel="noreferrer" class="icon-link">
-						<Icon icon={icon_arrowSquareOutBold} width="26" />
-					</a>
 				</div>
 				<div class="item-subheader">
 					<p class="position">Frontend Developer</p>
@@ -86,9 +91,6 @@
 				<div class="item-header">
 					<img src={image_challengeCamp} alt="Challenge Camp logo" class="item-image" />
 					<p class="company">Challenge Camp</p>
-					<a href="https://challengecamps.com/" target="_blank" rel="noreferrer" class="icon-link">
-						<Icon icon={icon_arrowSquareOutBold} width="26" />
-					</a>
 				</div>
 				<div class="item-subheader">
 					<p class="position">Camp Counselor</p>
@@ -107,9 +109,6 @@
 				<div class="item-header">
 					<img src={image_wordleTogether} alt="WordleTogether logo" class="item-image" />
 					<p class="company">WordleTogether.com</p>
-					<a href="https://wordletogether.com/" target="_blank" rel="noreferrer" class="icon-link">
-						<Icon icon={icon_arrowSquareOutBold} width="26" />
-					</a>
 				</div>
 				<div class="item-subheader">
 					<p class="position">Backend Developer</p>
@@ -128,14 +127,6 @@
 				<div class="item-header">
 					<img src={image_edgemontRobotics} alt="Edgemont Robotics logo" class="item-image" />
 					<p class="company">Edgemont Robotics</p>
-					<a
-						href="https://edgemontrobotics.github.io/"
-						target="_blank"
-						rel="noreferrer"
-						class="icon-link"
-					>
-						<Icon icon={icon_arrowSquareOutBold} width="26" />
-					</a>
 				</div>
 				<div class="item-subheader">
 					<p class="position">Website Developer</p>
@@ -156,14 +147,6 @@
 				<div class="item-header">
 					<img src={image_dae} alt="DAE Logo" class="item-image" />
 					<p class="company">The Digital Arts Experience</p>
-					<a
-						href="https://sites.google.com/thedae.com/thedae"
-						target="_blank"
-						rel="noreferrer"
-						class="icon-link"
-					>
-						<Icon icon={icon_arrowSquareOutBold} width="26" />
-					</a>
 				</div>
 				<div class="item-subheader">
 					<p class="position">Instructor</p>
@@ -255,19 +238,6 @@
 		align-items: center;
 		justify-content: space-between;
 		font-family: var(--font-serif2);
-	}
-
-	.icon-link {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin-left: auto;
-		color: currentColor;
-	}
-
-	.icon-link:hover {
-		filter: brightness(0.7);
 	}
 
 	.company {

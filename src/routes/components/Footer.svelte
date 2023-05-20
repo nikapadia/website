@@ -4,7 +4,7 @@
 
 <footer>
   <a href="https://github.com/nikapadia/nikapadia.github.io" target="_blank" rel="noreferrer">
-    <img src={github} alt="github" class="github-image" />
+    <img src={github} alt="github" class="github-image" width="50" height="50"/>
   </a>
 </footer>
 
@@ -18,6 +18,7 @@
   .github-image {
     transition: all .2s ease-in-out; 
     height: 50px;
+    width: 50px;
   }
   .github-image:hover {
     filter: brightness(0.7);

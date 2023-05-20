@@ -41,7 +41,7 @@
 		content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute."
 	/>
     <!-- Twitter -->
-    <meta property="twitter:card" content={image_oriLong}>
+    <meta property="twitter:card" content={image_coverPhoto}>
     <meta property="twitter:url" content="https://nikapadia.com/">
     <meta property="twitter:title" content="Nilay Kapadia">
     <meta property="twitter:description" content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute.">

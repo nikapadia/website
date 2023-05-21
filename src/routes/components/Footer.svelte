@@ -3,8 +3,8 @@
 </script>
 
 <footer>
-  <a href="https://github.com/nikapadia/nikapadia.github.io" target="_blank" rel="noreferrer">
-    <img src={github} alt="github" class="github-image" width="50" height="50"/>
+  <a href="https://github.com/nikapadia/website" target="_blank" rel="noreferrer">
+    <img src={github} alt="github" class="github-image" width="50" />
   </a>
 </footer>
 
@@ -17,7 +17,7 @@
   }
   .github-image {
     transition: all .2s ease-in-out; 
-    height: 50px;
+    height: auto;
     width: 50px;
   }
   .github-image:hover {

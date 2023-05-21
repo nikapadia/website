@@ -1,7 +1,10 @@
 <script>
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
-	import resume from '$lib/content/resume.pdf';
+
+    import Icon from '@iconify/svelte';
+    import icon_sun from '@iconify/icons-ph/sun';
+    import icon_moon from '@iconify/icons-ph/moon';
 </script>
 
 <header>
@@ -10,6 +13,12 @@
 			<a href="{base}/"> Nilay Kapadia </a>
 		</div>
 		<ul>
+            <!-- <li class="darkmode-toggle">
+                <a href="{base}">
+                    <Icon icon={icon_sun} width="24"/>
+                    <Icon icon={icon_moon} width="24"/>
+                </a>
+            </li> -->
 			<li>
 				<a href="{base}/">Home</a>
 			</li>

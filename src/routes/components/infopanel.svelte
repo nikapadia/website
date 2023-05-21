@@ -185,6 +185,8 @@
 		gap: 0.5em;
 		font-size: 15px;
 		font-weight: 400;
+        border: 1px solid #22272e;
+        border-radius: 20%;
 	}
 
 	.org-item-logo-img {

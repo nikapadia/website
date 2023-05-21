@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	import Icon from '@iconify/svelte';
-	import icon_arrowSquareOutBold from '@iconify/icons-ph/arrow-square-out-bold';
+	import icon_fileArrowDownFill from '@iconify/icons-ph/file-arrow-down-fill';
 
 	import image_poly from '$lib/images/poly.webp';
 	import image_degreeDoctor from '$lib/images/degree_doctor.webp';
@@ -10,41 +10,57 @@
 	import image_challengeCamp from '$lib/images/challenge_camp.webp';
 	import image_dae from '$lib/images/dae.webp';
 	import image_edgemontRobotics from '$lib/images/edgemont_robotics.webp';
-    import image_rpiSeal from '$lib/images/rpi_seal.webp';
-    import image_coverPhoto from '$lib/images/ori.webp';
+	import image_rpiSeal from '$lib/images/rpi_seal.webp';
+	import image_coverPhoto from '$lib/images/ori.webp';
+
+	import resume from '$lib/content/resume.pdf';
 </script>
 
 <svelte:head>
-    <title>Nilay Kapadia - Resume</title>
-    <meta
+	<title>Nilay Kapadia - Resume</title>
+	<meta
 		name="description"
 		content="This is my resume. It contains my education, current work, and prior work."
 	/>
-    <!-- Twitter -->
-    <meta property="twitter:card" content={image_coverPhoto}>
-    <meta property="twitter:url" content="https://nikapadia.com/">
-    <meta property="twitter:title" content="Nilay Kapadia">
-    <meta property="twitter:description" content="This is my resume. It contains my education, current work, and prior work.">
-    <meta property="twitter:image" content={image_coverPhoto}>
+	<!-- Twitter -->
+	<meta property="twitter:card" content={image_coverPhoto} />
+	<meta property="twitter:url" content="https://nikapadia.com/" />
+	<meta property="twitter:title" content="Nilay Kapadia" />
+	<meta
+		property="twitter:description"
+		content="This is my resume. It contains my education, current work, and prior work."
+	/>
+	<meta property="twitter:image" content={image_coverPhoto} />
 </svelte:head>
 
 <section>
 	<div class="main">
-		<h1 style="margin-top: 0;">Education</h1>
-        <div class="item">
-            <div class="item-header">
-                <img src={image_rpiSeal} alt="Rensselaer Polytechnic Institute Seal" class="item-image" />
-                <p class="company" style="font-size: 28px">Rensselaer Polytechnic Institute</p>
-            </div>
-            <div class="item-subheader">
-                <p class="position">B.S. in Computer Science</p>
-                <p class="tenure">2022 - 2026</p>
-            </div>            
-            <ul class="education-list">
-                <li class="el-item">Relevant Coursework: Foundations of Computer Science, Computer Organization, Data Structures, Calculus I/II</li>
-                <li class="el-item">Awards/Honors: Rensselaer Leadership Scholarship</li>
-            </ul>
-        </div>
+        <!-- <div class="resume-button">
+            <a href={resume} target="_blank" class="resume-link">
+                <button class="btn">
+                    <Icon icon={icon_fileArrowDownFill} />
+                    Formal Resume
+                </button>
+            </a>
+        </div> -->
+		<h1>Education</h1>
+		<div class="item">
+			<div class="item-header">
+				<img src={image_rpiSeal} alt="Rensselaer Polytechnic Institute Seal" class="item-image" />
+				<p class="company" style="font-size: 28px">Rensselaer Polytechnic Institute</p>
+			</div>
+			<div class="item-subheader">
+				<p class="position">B.S. in Computer Science</p>
+				<p class="tenure">2022 - 2026</p>
+			</div>
+			<ul class="education-list">
+				<li class="el-item">
+					Relevant Coursework: Foundations of Computer Science, Computer Organization, Data
+					Structures, Calculus I/II
+				</li>
+				<li class="el-item">Awards/Honors: Rensselaer Leadership Scholarship</li>
+			</ul>
+		</div>
 		<h1>Current Work</h1>
 		<div class="current">
 			<div class="item">
@@ -179,17 +195,87 @@
 		padding: 0 0 0 0;
 	}
 
-    .education-list {
-        list-style-type: disc;
-        margin: 0;
-        padding-left: 1em;
+    /* .resume-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
     }
 
-    .el-item {
-        margin: 1px;
-        padding: 1px;
-        font-family: var(--font-serif2);
+    .resume-link {
+        text-decoration: none;
     }
+
+	.btn {
+		appearance: none;
+		background-color: #2ea44f;
+		border: 1px solid rgba(27, 31, 35, 0.15);
+		border-radius: 6px;
+		box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+		box-sizing: border-box;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-family: var(--font-serif1);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 20px;
+		padding: 12px 22px;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		user-select: none;
+		touch-action: manipulation;
+		vertical-align: middle;
+		white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+	}
+
+	.btn:focus:not(:focus-visible):not(.focus-visible) {
+		box-shadow: none;
+		outline: none;
+	}
+
+	.btn:hover {
+		background-color: #2c974b;
+        text-decoration: none;
+	}
+
+	.btn:focus {
+		box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+		outline: none;
+	}
+
+	.btn:disabled {
+		background-color: #94d3a2;
+		border-color: rgba(27, 31, 35, 0.1);
+		color: rgba(255, 255, 255, 0.8);
+		cursor: default;
+	}
+
+	.btn:active {
+		background-color: #298e46;
+		box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+	} */
+
+	.education-list {
+		list-style-type: disc;
+		margin: 0;
+		padding-left: 1em;
+	}
+
+	.el-item {
+		margin: 1px;
+		padding: 1px;
+		font-family: var(--font-serif2);
+	}
 
 	.current,
 	.previous {
@@ -272,5 +358,4 @@
 		font-family: var(--font-serif1);
 		margin: 16px 0 16px 0;
 	}
-
 </style>

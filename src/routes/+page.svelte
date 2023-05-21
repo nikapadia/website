@@ -1,8 +1,10 @@
 <script>
-    import Infopanel from './components/infopanel.svelte';
 
 	import image_coverPhoto from '$lib/images/ori.webp';
-    import image_oriLong from '$lib/images/ori_long.webp';
+    import github from '$lib/images/github-mark-white.svg';
+    import linkedin from '$lib/images/linkedin.png';
+    import Icon from '@iconify/svelte';
+    import icon_envelope from '@iconify/icons-ph/envelope-duotone';
 
 	import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
@@ -50,18 +52,26 @@
 
 <section>
 	<div class="main">
-
 		<div class="text-box">
             <h1 class="typewriter">Hi there!</h1>
             <p>
             My name is Nilay Kapadia and I am a sophomore computer science student at Rensselaer
                 Polytechnic Institute.
             </p>
+            <h2>Contact</h2>
+            <div class="contact">
+                <a href="https://github.com/nikapadia/" target="_blank" rel="noreferrer">
+                    <img src={github} alt="github" class="github-image"/>
+                </a>
+                <a href="https://www.linkedin.com/in/nilaykapadia/" target="_blank" rel="noreferrer">
+                    <img src={linkedin} alt="linkedin" class="github-image"/>
+                </a>
+                <a href="mailto:nilayrkapadia@gmail.com" target="_blank" rel="noreferrer">
+                    <Icon icon={icon_envelope} class="github-image" width="50" color="white"/>
+                </a>
+            </div>
 		</div>
 
-        <div class="projects">
-            
-        </div>
 	</div>
 </section>
 
@@ -88,7 +98,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: left;
-		align-items: left;
+		align-items: center;
 		flex-wrap: nowrap;
 		color: currentColor;
 		gap: 0;
@@ -99,7 +109,7 @@
 	.text-box p {
 		font-size: 16px;
 		font-weight: 400;
-		padding: 0 64px 0 64px;
+		padding: 0 16px 0 16px;
 		font-family: var(--font-serif2);
 	}
 
@@ -108,6 +118,31 @@
 		margin: 0;
 		font-size: 4.5em;
 	}
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+	.text-box h2 {
+		font-family: var(--font-cursive2);
+		margin: 0;
+        padding: 0 0 16px 0;
+		font-size: 2.5em;
+	}
+
+    .github-image {
+        transition: all .2s ease-in-out; 
+        height: auto;
+        width: 50px;
+    }
+
+    .github-image:hover {
+        filter: brightness(0.7);
+    }
 
 	@media (max-width: 768px) {
 		.main {

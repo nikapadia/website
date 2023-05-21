@@ -13,11 +13,11 @@
 	import image_rpiSeal from '$lib/images/rpi_seal.webp';
 	import image_coverPhoto from '$lib/images/ori.webp';
 
-	import resume from '$lib/content/resume.pdf';
+	import Infopanel from '../components/infopanel.svelte';
 </script>
 
 <svelte:head>
-	<title>Nilay Kapadia - Resume</title>
+	<title>Resume - Nilay Kapadia</title>
 	<meta
 		name="description"
 		content="This is my resume. It contains my education, current work, and prior work."
@@ -34,8 +34,11 @@
 </svelte:head>
 
 <section>
+	<div class="infopanel">
+        <Infopanel />
+    </div>
 	<div class="main">
-        <!-- <div class="resume-button">
+		<!-- <div class="resume-button">
             <a href={resume} target="_blank" class="resume-link">
                 <button class="btn">
                     <Icon icon={icon_fileArrowDownFill} />
@@ -47,7 +50,7 @@
 		<div class="item">
 			<div class="item-header">
 				<img src={image_rpiSeal} alt="Rensselaer Polytechnic Institute Seal" class="item-image" />
-				<p class="company" style="font-size: 28px">Rensselaer Polytechnic Institute</p>
+				<p class="company rpi">Rensselaer Polytechnic Institute</p>
 			</div>
 			<div class="item-subheader">
 				<p class="position">B.S. in Computer Science</p>
@@ -183,6 +186,18 @@
 </section>
 
 <style>
+	section {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		/* padding: 1rem; */
+		width: 100%;
+		max-width: 64rem;
+		margin: 0 auto;
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+
 	.main {
 		max-width: 600px;
 		display: flex;
@@ -195,7 +210,7 @@
 		padding: 0 0 0 0;
 	}
 
-    /* .resume-button {
+	/* .resume-button {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -269,6 +284,7 @@
 		list-style-type: disc;
 		margin: 0;
 		padding-left: 1em;
+		padding-top: 4px;
 	}
 
 	.el-item {
@@ -324,6 +340,7 @@
 		align-items: center;
 		justify-content: space-between;
 		font-family: var(--font-serif2);
+		padding-top: 4px;
 	}
 
 	.company {
@@ -332,6 +349,10 @@
 		font-family: var(--font-serif1);
 		margin: 0;
 		flex-grow: 0;
+	}
+
+	.rpi {
+		font-size: 30px;
 	}
 
 	.position {
@@ -347,6 +368,7 @@
 	.description {
 		font-family: var(--font-serif2);
 		font-size: 16px;
+		padding-top: 4px;
 	}
 
 	p {
@@ -357,5 +379,33 @@
 	h1 {
 		font-family: var(--font-serif1);
 		margin: 16px 0 16px 0;
+	}
+
+	@media (max-width: 768px) {
+        .infopanel {
+            display: none;
+        }
+		.item-image {
+			width: 40px;
+			height: 40px;
+		}
+		.company {
+			font-size: 22px;
+		}
+		.rpi {
+			font-size: 19px;
+		}
+		.position {
+			font-size: 18px;
+		}
+		.tenure {
+			font-size: 16px;
+		}
+		.description {
+			font-size: 16px;
+		}
+		.el-item {
+			font-size: 16px;
+		}
 	}
 </style>

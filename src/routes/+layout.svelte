@@ -1,20 +1,18 @@
 <script lang="ts">
 	import Navbar from './components/navbar.svelte';
 	import Footer from './components/footer.svelte';
-    import Infopanel from './components/infopanel.svelte';
+	import Infopanel from './components/infopanel.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
 	<Navbar />
-  
+
 	<main>
-        <Infopanel></Infopanel>
-        <slot />
-
+		<!-- <Infopanel/> -->
+		<slot />
 	</main>
-  <Footer />
-
+	<Footer />
 </div>
 
 <style>
@@ -33,10 +31,9 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-        justify-content: space-between;
+		justify-content: space-between;
 	}
 
 	@media (min-width: 480px) {
-
 	}
 </style>

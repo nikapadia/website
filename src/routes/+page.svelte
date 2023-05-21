@@ -9,7 +9,7 @@
 
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
-
+    import Infopanel from './components/infopanel.svelte';
 	let ready = false;
 	onMount(() => (ready = true));
 
@@ -54,6 +54,9 @@
 </svelte:head>
 
 <section>
+    <div class="infopanel">
+        <Infopanel/>
+    </div>
 	<div class="main">
 		<div class="text-box">
 			<h1 class="typewriter">Hi there!</h1>
@@ -93,10 +96,22 @@
     font-size: 1em;
 	} */
 
+    section {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		/* padding: 1rem; */
+		width: 100%;
+		max-width: 64rem;
+		margin: 0 auto;
+		box-sizing: border-box;
+		justify-content: space-between;
+	}
+
 	.main {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: right;
 		gap: 0;
 		margin: 0 0 0 0;
 		padding: 0 0 0 0;
@@ -180,13 +195,16 @@
 	}
 
 	@media (max-width: 768px) {
-		.main {
+		section {
+            justify-content: center;
+        }
+        .main {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+            display: none;
 		}
 		.text-box {
 			display: none;
-		}
-	}
+		}	}
 </style>

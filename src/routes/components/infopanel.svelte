@@ -10,10 +10,14 @@
 	import image_wordleTogether from '$lib/images/wordletogether.webp';
 	import image_edgemontRobotics from '$lib/images/edgemont_robotics.webp';
 	import image_degreeDoctor from '$lib/images/degree_doctor.webp';
-    import image_oriLong from '$lib/images/ori_long.webp';
+	import image_oriLong from '$lib/images/ori_long.webp';
+
+	import github from '$lib/images/github-mark-white.svg';
+	import linkedin from '$lib/images/linkedin.png';
+	import icon_envelope from '@iconify/icons-ph/envelope-duotone';
 
 	import { onMount } from 'svelte';
-    import { fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 
 	let ready = false;
 	onMount(() => (ready = true));
@@ -39,73 +43,94 @@
 			}
 		};
 	}
-
 </script>
 
 <div class="profile">
-			<div class="picture">
-				<picture>
-					<img src={image_coverPhoto} alt="Cover" class="cover-photo" />
-				</picture>
+	<div class="picture">
+		<picture>
+			<img src={image_coverPhoto} alt="Cover" class="cover-photo" />
+		</picture>
+	</div>
+	<div class="info-box">
+		<h3 class="name">Nilay Kapadia</h3>
+		<h3 class="username">nikapadia</h3>
+		<div class="info-box-sub">
+			<!-- #c593f5 -->
+			<div class="info-box-item">
+				<Icon icon={icon_building} width="24" color="currentColor" /> Rensselaer Polytechnic Institute
 			</div>
-			<div class="info-box">
-				<h3 class="name">Nilay Kapadia</h3>
-				<h3 class="username">nikapadia</h3>
-				<div class="info-box-sub">
-					<!-- #c593f5 -->
-					<div class="info-box-item">
-						<Icon icon={icon_building} width="24" color="currentColor" /> Rensselaer Polytechnic Institute
-					</div>
-					<div class="info-box-item">
-						<Icon icon={icon_graduationCap} width="24" color="currentColor" /> Class of 2026
-					</div>
-					<div class="info-box-item">
-						<Icon icon={icon_mapTrifold} width="24" color="currentColor" /> New York
-					</div>
-				</div>
+			<div class="info-box-item">
+				<Icon icon={icon_graduationCap} width="24" color="currentColor" /> Class of 2026
 			</div>
-
-			<hr />
-			<div class="organizations">
-				<div class="org-title">Organizations</div>
-				<div class="org-list">
-					<div class="org-item">
-						<a href="https://degreedoctor.org/" target="_blank" rel="noreferrer">
-							<img src={image_degreeDoctor} alt="Degree Doctor" class="org-item-logo-img" />
-						</a>
-					</div>
-					<div class="org-item">
-						<a href="https://poly.rpi.edu/" target="_blank" rel="noreferrer">
-							<img src={image_poly} alt="The Polytechnic" class="org-item-logo-img" />
-						</a>
-					</div>
-					<div class="org-item">
-						<a href="https://challengecamps.com/" target="_blank" rel="noreferrer">
-							<img src={image_challengeCamp} alt="Challenge Camp" class="org-item-logo-img" />
-						</a>
-					</div>
-					<div class="org-item">
-						<a href="https://wordletogether.com/" target="_blank" rel="noreferrer">
-							<img src={image_wordleTogether} alt="WordleTogether.com" class="org-item-logo-img" />
-						</a>
-					</div>
-					<div class="org-item">
-						<a href="https://edgemontrobotics.github.io/" target="_blank" rel="noreferrer">
-							<img
-								src={image_edgemontRobotics}
-								alt="Edgemont Robotics Team"
-								class="org-item-logo-img"
-							/>
-						</a>
-					</div>
-					<div class="org-item">
-						<a href="https://www.thedae.com/" target="_blank" rel="noreferrer">
-							<img src={image_dae} alt="Challenge Camp" class="org-item-logo-img" />
-						</a>
-					</div>
-				</div>
+			<div class="info-box-item">
+				<Icon icon={icon_mapTrifold} width="24" color="currentColor" /> New York
 			</div>
 		</div>
+	</div>
+
+	<hr />
+	<div class="organizations">
+		<div class="org-title">Organizations</div>
+		<div class="org-list">
+			<div class="org-item">
+				<a href="https://degreedoctor.org/" target="_blank" rel="noreferrer">
+					<img src={image_degreeDoctor} alt="Degree Doctor" class="org-item-logo-img" />
+				</a>
+			</div>
+			<div class="org-item">
+				<a href="https://poly.rpi.edu/" target="_blank" rel="noreferrer">
+					<img src={image_poly} alt="The Polytechnic" class="org-item-logo-img" />
+				</a>
+			</div>
+			<div class="org-item">
+				<a href="https://challengecamps.com/" target="_blank" rel="noreferrer">
+					<img src={image_challengeCamp} alt="Challenge Camp" class="org-item-logo-img" />
+				</a>
+			</div>
+			<div class="org-item">
+				<a href="https://wordletogether.com/" target="_blank" rel="noreferrer">
+					<img src={image_wordleTogether} alt="WordleTogether.com" class="org-item-logo-img" />
+				</a>
+			</div>
+			<div class="org-item">
+				<a href="https://edgemontrobotics.github.io/" target="_blank" rel="noreferrer">
+					<img
+						src={image_edgemontRobotics}
+						alt="Edgemont Robotics Team"
+						class="org-item-logo-img"
+					/>
+				</a>
+			</div>
+			<div class="org-item">
+				<a href="https://www.thedae.com/" target="_blank" rel="noreferrer">
+					<img src={image_dae} alt="Challenge Camp" class="org-item-logo-img" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact">
+        <hr />
+        <div class="contact-title">Contact</div>
+        <div class="contact-list">
+            <div class="contact-item">
+                <a href="mailto:nilayrkapadia@gmail.com" target="_blank" rel="noreferrer" class="email">
+                    <Icon icon={icon_envelope} width="50" />
+                </a>
+            </div>
+            <!-- <div class="contact-item">
+                <a href="https://github.com/nikapadia/" target="_blank" rel="noreferrer">
+                    <img src={github} alt="github" class="image gh" />
+                </a>
+            </div> -->
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/nilaykapadia/" target="_blank" rel="noreferrer">
+                    <img src={linkedin} alt="linkedin" class="image"/>
+                </a>
+            </div>
+        </div>
+	</div>
+</div>
 
 <style>
 	/*   h1 {
@@ -185,8 +210,8 @@
 		gap: 0.5em;
 		font-size: 15px;
 		font-weight: 400;
-        border: 1px solid #22272e;
-        border-radius: 20%;
+		border: 1px solid #22272e;
+		border-radius: 20%;
 	}
 
 	.org-item-logo-img {
@@ -208,7 +233,59 @@
 		border: 2px solid gray;
 	}
 
-	@media (max-width: 768px) {
-	}
-</style>
+    .contact {
+        display: none;
+    }
 
+    .contact-title {
+		color: currentColor;
+		font-size: 20px;
+		margin: 0 0 8px 0;
+		font-family: var(--font-serif2);
+	}
+
+    .contact-list {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+		gap: 0.5em;
+		margin: 0 0 0 0;
+		max-width: 300px;
+	}
+
+    .contact-item {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+		gap: 0.5em;
+		font-size: 15px;
+		font-weight: 400;
+		border: 1px solid #22272e;
+	}
+
+    .image {
+		transition: all 0.2s ease-in-out;
+		height: auto;
+		width: 50px;
+	}
+
+    .email {
+        transition: all 0.2s ease-in-out;
+        height: auto;
+        width: 50px;
+        color: currentColor;
+    }
+
+    .email:hover {
+        filter: contrast(30%);
+    }
+
+    @media (max-width: 768px) {
+        .contact {
+            display: inline;
+        }
+    }
+</style>

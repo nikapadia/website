@@ -1,13 +1,14 @@
 <script>
-
 	import image_coverPhoto from '$lib/images/ori.webp';
-    import github from '$lib/images/github-mark-white.svg';
-    import linkedin from '$lib/images/linkedin.png';
-    import Icon from '@iconify/svelte';
-    import icon_envelope from '@iconify/icons-ph/envelope-duotone';
+	import github from '$lib/images/github-mark-white.svg';
+	import linkedin from '$lib/images/linkedin.png';
+	import Icon from '@iconify/svelte';
+	import icon_envelope from '@iconify/icons-ph/envelope-duotone';
+
+    // import Cube from "phosphor-svelte/lib/cube";
 
 	import { onMount } from 'svelte';
-    import { fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 
 	let ready = false;
 	onMount(() => (ready = true));
@@ -33,7 +34,6 @@
 			}
 		};
 	}
-
 </script>
 
 <svelte:head>
@@ -42,36 +42,48 @@
 		name="description"
 		content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute."
 	/>
-    <!-- Twitter -->
-    <meta property="twitter:card" content={image_coverPhoto}>
-    <meta property="twitter:url" content="https://nikapadia.com/">
-    <meta property="twitter:title" content="Nilay Kapadia">
-    <meta property="twitter:description" content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute.">
-    <meta property="twitter:image" content={image_coverPhoto}>
+	<!-- Twitter -->
+	<meta property="twitter:card" content={image_coverPhoto} />
+	<meta property="twitter:url" content="https://nikapadia.com/" />
+	<meta property="twitter:title" content="Nilay Kapadia" />
+	<meta
+		property="twitter:description"
+		content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute."
+	/>
+	<meta property="twitter:image" content={image_coverPhoto} />
 </svelte:head>
 
 <section>
 	<div class="main">
 		<div class="text-box">
-            <h1 class="typewriter">Hi there!</h1>
-            <p>
-            My name is Nilay Kapadia and I am a sophomore computer science student at Rensselaer
-                Polytechnic Institute.
-            </p>
-            <h2>Contact</h2>
-            <div class="contact">
-                <a href="https://github.com/nikapadia/" target="_blank" rel="noreferrer">
-                    <img src={github} alt="github" class="github-image"/>
-                </a>
-                <a href="https://www.linkedin.com/in/nilaykapadia/" target="_blank" rel="noreferrer">
-                    <img src={linkedin} alt="linkedin" class="github-image"/>
-                </a>
-                <a href="mailto:nilayrkapadia@gmail.com" target="_blank" rel="noreferrer">
-                    <Icon icon={icon_envelope} class="github-image" width="50" color="white"/>
-                </a>
-            </div>
+			<h1 class="typewriter">Hi there!</h1>
+			<p>
+				My name is Nilay Kapadia and I am a sophomore computer science student at Rensselaer
+				Polytechnic Institute.
+			</p>
+			<h2>Contact</h2>
+			<div class="contact">
+				<a
+					href="https://github.com/nikapadia/"
+					target="_blank"
+					rel="noreferrer"
+					style="fill: currentColor;"
+				>
+					<img src={github} alt="github" class="image gh" />
+				</a>
+				<a href="https://www.linkedin.com/in/nilaykapadia/" target="_blank" rel="noreferrer">
+					<img src={linkedin} alt="linkedin" class="image" />
+				</a>
+				<a
+					href="mailto:nilayrkapadia@gmail.com"
+					target="_blank"
+					rel="noreferrer"
+                    class="email"
+				>
+					<Icon icon={icon_envelope} width="50"/>
+				</a>
+			</div>
 		</div>
-
 	</div>
 </section>
 
@@ -119,30 +131,53 @@
 		font-size: 4.5em;
 	}
 
-    .contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
+	.contact {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
 
 	.text-box h2 {
 		font-family: var(--font-cursive2);
 		margin: 0;
-        padding: 0 0 16px 0;
+		padding: 0 0 16px 0;
 		font-size: 2.5em;
 	}
 
-    .github-image {
-        transition: all .2s ease-in-out; 
+	.image {
+		transition: all 0.2s ease-in-out;
+		height: auto;
+		width: 50px;
+	}
+
+    .email {
+        transition: all 0.2s ease-in-out;
         height: auto;
         width: 50px;
+        color: currentColor;
     }
 
-    .github-image:hover {
-        filter: brightness(0.7);
+    .email:hover {
+        filter: contrast(30%);
     }
+
+	@media (prefers-color-scheme: dark) {
+		.gh {
+			filter: invert(0);
+		}
+	}
+
+	@media (prefers-color-scheme: light) {
+		.gh {
+			filter: invert(1);
+		}
+	}
+
+	.image:hover {
+		filter: brightness(0.7);
+	}
 
 	@media (max-width: 768px) {
 		.main {

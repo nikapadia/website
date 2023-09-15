@@ -5,6 +5,7 @@
 	import icon_fileArrowDownFill from '@iconify/icons-ph/file-arrow-down-fill';
 
 	import image_poly from '$lib/images/poly.webp';
+	import image_bozu from '$lib/images/bozu.webp';
 	import image_degreeDoctor from '$lib/images/degree_doctor.webp';
 	import image_wordleTogether from '$lib/images/wordletogether.webp';
 	import image_challengeCamp from '$lib/images/challenge_camp.webp';
@@ -35,8 +36,8 @@
 
 <section>
 	<div class="infopanel">
-        <Infopanel />
-    </div>
+		<Infopanel />
+	</div>
 	<div class="main">
 		<!-- <div class="resume-button">
             <a href={resume} target="_blank" class="resume-link">
@@ -54,14 +55,15 @@
 			</div>
 			<div class="item-subheader">
 				<p class="position">B.S. in Computer Science</p>
-				<p class="tenure">2022 - 2026</p>
+				<p class="tenure">Aug 2022 - Dec 2025</p>
 			</div>
 			<ul class="education-list">
 				<li class="el-item">
-					Relevant Coursework: Foundations of Computer Science, Computer Organization, Data
-					Structures, Calculus I/II
+					<b>Relevant Coursework</b>: Data Structures, Discrete Math and Theory of Computing,
+					Computer Organization, Introduction to Algorithms, Multivariable Calculus and Matrix
+					Algebra
 				</li>
-				<li class="el-item">Awards/Honors: Rensselaer Leadership Scholarship</li>
+				<li class="el-item"><b>Awards/Honors</b>: Rensselaer Leadership Scholarship</li>
 			</ul>
 		</div>
 		<h1>Current Work</h1>
@@ -76,16 +78,38 @@
 					<p class="tenure">Sep 2022 - Present</p>
 				</div>
 				<p class="description">
-					As News Editor for the school paper, I oversee final edits for publication, set style
-					guidelines and manage the entire news division. I have also conducted interviews with
-					school deans as part of an information gathering assignment to understand the future of
-					their schools and the Institute as a whole.
+					I currently manage the news division for the school newspaper. This includes setting style
+					guidelines for news articles, assigning club members to cover events, and other
+					responsibilities. In the past I have helped to create a plan for printing weekly tabloids
+					to be presented to a supervisory board. I have also conducted interviews with school deans
+					and other administrators for fact finding purposes.
 				</p>
 			</div>
 		</div>
 		<!-- <hr /> -->
 		<h1>Prior Work</h1>
 		<div class="previous">
+			<div class="item">
+				<div class="item-header">
+					<img src={image_bozu} alt="Bozu Logo" class="item-image" />
+					<p class="company">Bozu</p>
+				</div>
+				<div class="item-subheader">
+					<p class="position">Software Engineering Intern</p>
+					<p class="tenure">May 2023 - Aug 2023</p>
+				</div>
+				<p class="description">
+					Bozu is a is a communication platform for video conferencing, multi-group events,
+					webinars, and instant messaging. I designed a proof-of-concept system using Microsoft’s
+					Graph API and JavaScript to allow users to sync calendar events between Outlook and the
+					platform. This system was later expanded to create Bozu meetings within the Outlook
+					calendar through a custom Office Add-in. I also developed a custom Slack app to let users
+					create a Bozu meeting in Slack using the Slack API and BoltJS. This required to creation
+					of a sample MySQL database to demonstrate how to handle account binding between the two
+					services. In addition, I assisted with the development of a proof-of-concept SIP gateway
+					using Asterisk PBX, Edumeet, and Docker.
+				</p>
+			</div>
 			<div class="item">
 				<div class="item-header">
 					<img src={image_degreeDoctor} alt="Degree Doctor" class="item-image" />
@@ -96,13 +120,12 @@
 					<p class="tenure">Jan 2023 - May 2023</p>
 				</div>
 				<p class="description">
-					Degree Doctor was a team of 8 students, a part of the Rensselaer Center for Open Source,
-					which created a web app that lets students create and manage their college degree. The app
-					is built using VueJS app built with Quasar framework and uses a Python scraper to get data
-					from various school websites. My role was to take currently existing UI elements and
-					improve their functionality and usability. Most of the work is self-directed, but I worked
-					with other members of the frontend team to create a general plan for how we wanted the
-					site to look.
+					Degree Doctor is a web app that helps RPI students plan their degrees using data scraped
+					from various school websites. I worked with a team of 10 to develop the web app with a
+					primary focus on frontend work. I Revamped various parts of the UI using Vue.js to improve
+					functionality and usability while also adding new features to help with managing multiple
+					degree plans. This included refactoring the way the app stores local JSON data for each
+					degree plan to utilize unique identifiers instead of user inputted names.
 				</p>
 			</div>
 
@@ -135,10 +158,10 @@
 				</div>
 				<p class="description">
 					WordleTogether is a multiplayer version of the game Wordle that I helped to create with a
-					friend. While my friend created the actual game, I set up all the necessary backend
-					infrastructure. This included an AWS EC2 instance for the server along with routing
-					traffic through Cloudflare. We estimated that the game was played by over 200,000 unique
-					players at some point during the first year.
+					friend. I was tasked with setting up all the necessary backend infrastructure including an
+					AWS EC2 instance for the server along with routing traffic through Cloudflare. We
+					estimated that the game was played by over 200,000 unique players at some point during the
+					first year.
 				</p>
 			</div>
 
@@ -152,13 +175,10 @@
 					<p class="tenure">Sep 2021 - Jun 2022</p>
 				</div>
 				<p class="description">
-					I created a website using basic HTML/CSS and a handful for Bootstrap elements. Later, I
-					completely redesigned the website from the ground up. Instead of basic HTML/CSS and
-					Bootstrap, the new website used SvelteKit, a compiled, component-based JavaScript
-					framework. Part of the rework involved making the website mobile compatible as the
-					previous website did not function properly on mobile. While making the site, I taught
-					myself Git flow and GitHub repo management and created documentation for future
-					maintainers.
+					I rebuilt the team’s website from the ground up using primarily using Node.js and
+					SvelteKit. I also taught myself basic web development and Git/GitHub and created
+					documentation for future maintainers. Prior to the website rework, I assisted in teaching
+					inexperienced members the basics of Java.
 				</p>
 			</div>
 
@@ -382,9 +402,9 @@
 	}
 
 	@media (max-width: 768px) {
-        .infopanel {
-            display: none;
-        }
+		.infopanel {
+			display: none;
+		}
 		.item-image {
 			width: 40px;
 			height: 40px;

@@ -10,6 +10,7 @@
 	import image_wordleTogether from '$lib/images/wordletogether.webp';
 	import image_edgemontRobotics from '$lib/images/edgemont_robotics.webp';
 	import image_degreeDoctor from '$lib/images/degree_doctor.webp';
+    import image_bozu from '$lib/images/bozu.webp';
 	import image_oriLong from '$lib/images/ori_long.webp';
 
 	import github from '$lib/images/github-mark-white.svg';
@@ -60,7 +61,7 @@
 				<Icon icon={icon_building} width="24" color="currentColor" /> Rensselaer Polytechnic Institute
 			</div>
 			<div class="info-box-item">
-				<Icon icon={icon_graduationCap} width="24" color="currentColor" /> Class of 2026
+				<Icon icon={icon_graduationCap} width="24" color="currentColor" /> Class of 2025
 			</div>
 			<div class="info-box-item">
 				<Icon icon={icon_mapTrifold} width="24" color="currentColor" /> New York
@@ -72,6 +73,11 @@
 	<div class="organizations">
 		<div class="org-title">Organizations</div>
 		<div class="org-list">
+            <div class="org-item">
+                <a href="https://bozu.us/" target="_blank" rel="noreferrer">
+                    <img src={image_bozu} alt="Bozu" class="org-item-logo-img" />
+                </a>
+            </div>
 			<div class="org-item">
 				<a href="https://degreedoctor.org/" target="_blank" rel="noreferrer">
 					<img src={image_degreeDoctor} alt="Degree Doctor" class="org-item-logo-img" />
@@ -182,6 +188,7 @@
 		font-size: 18px;
 		margin: 0 0 20px 0;
 		font-family: var(--font-serif2);
+        font-weight: 200;
 	}
 
 	.org-title {

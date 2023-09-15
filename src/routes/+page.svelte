@@ -59,10 +59,10 @@
     </div>
 	<div class="main">
 		<div class="text-box">
-			<h1 class="typewriter">Hi there!</h1>
+			<h1 class="typewriter">Hi there! </h1>
 			<p>
 				My name is Nilay Kapadia and I am a sophomore computer science student at Rensselaer
-				Polytechnic Institute.
+				Polytechnic Institute. 
 			</p>
 			<h2>Contact</h2>
 			<div class="contact">
@@ -86,6 +86,9 @@
 					<Icon icon={icon_envelope} width="50"/>
 				</a>
 			</div>
+            <p style="padding-top: 24em">
+                This site is still under construction. Check back soon™ for more updates!
+            </p>
 		</div>
 	</div>
 </section>

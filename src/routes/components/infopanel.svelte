@@ -69,8 +69,7 @@
 		</div>
 	</div>
 
-	<hr />
-	<div class="organizations">
+	<!-- <div class="organizations">
 		<div class="org-title">Organizations</div>
 		<div class="org-list">
             <div class="org-item">
@@ -113,29 +112,7 @@
 				</a>
 			</div>
 		</div>
-	</div>
-
-	<div class="contact">
-        <hr />
-        <div class="contact-title">Contact</div>
-        <div class="contact-list">
-            <div class="contact-item">
-                <a href="mailto:nilayrkapadia@gmail.com" target="_blank" rel="noreferrer" class="email">
-                    <Icon icon={icon_envelope} width="50" />
-                </a>
-            </div>
-            <!-- <div class="contact-item">
-                <a href="https://github.com/nikapadia/" target="_blank" rel="noreferrer">
-                    <img src={github} alt="github" class="image gh" />
-                </a>
-            </div> -->
-            <div class="contact-item">
-                <a href="https://www.linkedin.com/in/nilaykapadia/" target="_blank" rel="noreferrer">
-                    <img src={linkedin} alt="linkedin" class="image"/>
-                </a>
-            </div>
-        </div>
-	</div>
+	</div> -->
 </div>
 
 <style>
@@ -239,60 +216,4 @@
 		vertical-align: middle;
 		border: 2px solid gray;
 	}
-
-    .contact {
-        display: none;
-    }
-
-    .contact-title {
-		color: currentColor;
-		font-size: 20px;
-		margin: 0 0 8px 0;
-		font-family: var(--font-serif2);
-	}
-
-    .contact-list {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: left;
-		align-items: center;
-		gap: 0.5em;
-		margin: 0 0 0 0;
-		max-width: 300px;
-	}
-
-    .contact-item {
-		display: flex;
-		flex-direction: row;
-		justify-content: left;
-		align-items: center;
-		gap: 0.5em;
-		font-size: 15px;
-		font-weight: 400;
-		border: 1px solid #22272e;
-	}
-
-    .image {
-		transition: all 0.2s ease-in-out;
-		height: auto;
-		width: 50px;
-	}
-
-    .email {
-        transition: all 0.2s ease-in-out;
-        height: auto;
-        width: 50px;
-        color: currentColor;
-    }
-
-    .email:hover {
-        filter: contrast(30%);
-    }
-
-    @media (max-width: 768px) {
-        .contact {
-            display: inline;
-        }
-    }
 </style>

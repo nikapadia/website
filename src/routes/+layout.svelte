@@ -1,12 +1,12 @@
 <script lang="ts">
-	import Navbar from './components/navbar.svelte';
-	import Footer from './components/footer.svelte';
-	import Infopanel from './components/infopanel.svelte';
+	// import Navbar from './components/navbar.svelte';
+	import Footer from './components/Footer.svelte';
+	// import Infopanel from './components/infopanel.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
-	<Navbar />
+	<!-- <Navbar /> -->
 
 	<main>
 		<!-- <Infopanel/> -->

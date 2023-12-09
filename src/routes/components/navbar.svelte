@@ -19,15 +19,15 @@
                     <Icon icon={icon_moon} width="24"/>
                 </a>
             </li> -->
-			<li>
+			<!-- <li>
 				<a href="{base}/">Home</a>
-			</li>
+			</li> -->
 			<li>
-				<a href="{base}/">About</a>
+				<a href="{base}/about">About</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="{base}/resume">Resume</a>
-			</li>
+			</li> -->
 		</ul>
 	</nav>
 </header>

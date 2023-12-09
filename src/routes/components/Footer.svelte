@@ -11,11 +11,11 @@
 		</a>
 	</div>
 	<div class="mobile"> 
-        <a href="{base}/" class="link">Home</a>
+        <!-- <a href="{base}/" class="link">Home</a> -->
         <a href="https://github.com/nikapadia/website" target="_blank" rel="noreferrer">
 			<img src={github} alt="github" class="github-image" width="50" />
 		</a>
-        <a href="{base}/resume" class="link">Resume</a>
+        <!-- <a href="{base}/resume" class="link">Resume</a> -->
     </div>
 </footer>
 

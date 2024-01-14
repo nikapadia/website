@@ -54,7 +54,19 @@
                 <li class="project-item">
                     <div class="box">
                         <span class="project-title">
+                            <a href="https://github.com/nikapadia/polycal" target="_blank" rel="noreferrer">PolyCal</a>
+                            <p>Jan 2024 – Present</p>
+                        </span>
+                        <p class="project-description">
+                            PolyCal is calendar app that centralizes every event on RPI's campus into one place. Any student can submit an event to be added to the calendar. It is built with Next.js and Go.
+                        </p>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="box">
+                        <span class="project-title">
                             <a href="https://nikapadia.github.io/SuperSnippets" target="_blank" rel="noreferrer">Super Snippets</a>
+                            <p>Sep 2023 – Dec 2023</p>
                         </span>
                         <p class="project-description">
                             Super Snippets is a React app that turns code snippets into visually appealing images for presentations and technical demonstrations.
@@ -65,6 +77,7 @@
                     <div class="box">
                         <span class="project-title">
                             <a href="https://degreedoctor.org" target="_blank" rel="noreferrer">Degree Doctor</a>
+                            <p>Jan 2023 – May 2023</p>
                         </span>
                         <p class="project-description">
                             Degree Doctor is a Vue app that helps students create and manage a plan for their college degree.
@@ -75,23 +88,13 @@
                     <div class="box">
                         <span class="project-title">
                             <a href="https://wordletogether.com" target="_blank" rel="noreferrer">Wordle Together</a>
+                            <p>Jan 2022 – Jan 2023</p>
                         </span>
                         <p class="project-description">
                             Wordle Together is a multiplayer version of Wordle where two players compete to guess the word first.
                         </p>
                     </div>
-                </li>
-                <li class="project-item">
-                    <div class="box">
-                        <span class="project-title">
-                            <a href="/" rel="noreferrer">Coming Soon...</a>
-                        </span>
-                        <p class="project-description">
-                            Come back soon to see more projects!
-                        </p>
-                    </div>
-                </li>
-                
+                </li>                
             </ol>
         </div>
         <div class="section-title">
@@ -237,9 +240,20 @@
     }
 
     .project-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-size: 18px;
         font-family: var(--font-serif2);
         text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .project-title p {
+        font-size: 16px;
+        font-family: var(--font-serif2);
+        color: #8D8D8D;
         margin: 0;
         padding: 0;
     }

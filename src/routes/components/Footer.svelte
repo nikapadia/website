@@ -50,14 +50,5 @@
             justify-content: space-around;
             align-items: center;
         }
-        .link {
-            color: currentColor;
-            text-decoration: none;
-            font-family: var(--font-serif1);
-            font-weight: 700;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
     }
 </style>

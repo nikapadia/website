@@ -19,7 +19,7 @@
 	<title>Nilay Kapadia</title>
 	<meta
 		name="description"
-		content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute."
+		content="Hey! I'm Nilay, a junior computer science student as Rensselaer Polytechnic Institute."
 	/>
 	<!-- Twitter -->
 	<meta property="twitter:card" content={image_coverPhoto} />
@@ -27,7 +27,7 @@
 	<meta property="twitter:title" content="Nilay Kapadia" />
 	<meta
 		property="twitter:description"
-		content="Hey! I'm Nilay, a sophomore computer science student as Rensselaer Polytechnic Institute."
+		content="Hey! I'm Nilay, a junior computer science student as Rensselaer Polytechnic Institute."
 	/>
 	<meta property="twitter:image" content={image_coverPhoto} />
 </svelte:head>
@@ -43,7 +43,7 @@
         <div class="info-box">
             <h1 class="name">Nilay Kapadia</h1>
             <div>
-                <h2 class="subtitle">Sophomore CS Student at <span title="Rensselaer Polytechnic Institute">RPI</span></h2>
+                <h2 class="subtitle">Junior CS Student at <span title="Rensselaer Polytechnic Institute">RPI</span></h2>
             </div>
         </div>
         <div class="section-title">
@@ -55,10 +55,10 @@
                     <div class="box">
                         <span class="project-title">
                             <a href="https://github.com/nikapadia/polycal" target="_blank" rel="noreferrer">PolyCal</a>
-                            <p>Jan 2024 – Present</p>
+                            <p>Jan 2024 – May 2024</p>
                         </span>
                         <p class="project-description">
-                            PolyCal is calendar app that centralizes every event on RPI's campus into one place. Any student can submit an event to be added to the calendar. It is built with Next.js and Go.
+                            PolyCal is calendar app that centralizes every event on RPI's campus into one place. Any student can submit an event to be added to the calendar. It is built with React and Go.
                         </p>
                     </div>
                 </li>

@@ -1,11 +1,12 @@
 <script>
-	import { onMount } from 'svelte';
-
     let url = 'https://drive.google.com/file/d/1BI7cDQHdK87LBFVmUlxrCd560kYqbiAl/view';
-    onMount(() => {
-        window.location.href = url;
-    });
 </script>
+
+<svelte:head>
+	<title>Redirecting...</title>
+    <meta http-equiv="Refresh" content="0; URL={url}" />
+</svelte:head>
+
 
 <section>
     <div class="redirect">

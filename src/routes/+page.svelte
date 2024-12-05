@@ -43,7 +43,7 @@
         <div class="info-box">
             <h1 class="name">Nilay Kapadia</h1>
             <div>
-                <h2 class="subtitle">Junior CS Student at <span title="Rensselaer Polytechnic Institute">RPI</span></h2>
+                <h2 class="subtitle">Junior CS student at <span title="Rensselaer Polytechnic Institute">RPI</span></h2>
             </div>
         </div>
         <div class="section-title">
@@ -54,11 +54,22 @@
                 <li class="project-item">
                     <div class="box">
                         <span class="project-title">
+                            <a href="https://github.com/thepoly/pipeline" target="_blank" rel="noreferrer">Pipeline</a>
+                            <p>Aug 2024 — Present</p>
+                        </span>
+                        <p class="project-description">
+                            Rewriting 6-year-old CMS for The Polytechnic, RPI's student-run newspaper. Pipeline is built with Django, Wagtail, and Sass.
+                        </p>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="box">
+                        <span class="project-title">
                             <a href="https://github.com/nikapadia/polycal" target="_blank" rel="noreferrer">PolyCal</a>
                             <p>Jan 2024 — May 2024</p>
                         </span>
                         <p class="project-description">
-                            PolyCal is calendar app that centralizes every event on RPI's campus into one place. Any student can submit an event to be added to the calendar. It is built with React and Go.
+                            PolyCal is calendar app that centralizes every event on RPI's campus into one place. It is built with React and Go.
                         </p>
                     </div>
                 </li>

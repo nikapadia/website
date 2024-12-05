@@ -47,6 +47,27 @@
             </div>
         </div>
         <div class="section-title">
+            <h2>Work Experience</h2>
+        </div>
+        <div class="experience-wrapper">
+            <ol class="experience">
+                <li class="experience-item">
+                    <div class="experience-box">
+                        <span class="experience-title">
+                            <a href="https://doronprecision.com/" target="_blank" rel="noreferrer">Doron Precision Systems</a>
+                            <p>Jun 2024 — Aug 2024</p>
+                        </span>
+                        <p class="experience-role">Software Engineering Intern</p>
+                        <p class="project-description">
+                            Built a custom AI traffic system in Unreal Engine 5 with C++ that allows for thousands of vehicles to navigate autonomously, avoid each other, safely merge into lanes and onto highways, and follow right of way at intersections. 
+                            <br> <br> 
+                            <a href="https://www.youtube.com/watch?v=d42bJzZ5OIY" target="_blank" rel="noreferrer">Demo 1</a> <a href="https://www.youtube.com/watch?v=lOH1_jIL3ZY" target="_blank" rel="noreferrer">Demo 2</a>
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div class="section-title">
             <h2>Projects</h2>
         </div>
         <div class="projects-wrapper">
@@ -213,6 +234,76 @@
         font-size: 24px;
         font-family: var(--font-serif2);
         margin: 0;
+        padding: 0;
+    }
+
+    .experience-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        padding: 0;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .experience {
+        list-style: none !important;
+        flex-wrap: wrap;
+        margin-right: -8px;
+        margin-left: -8px;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        padding: 0;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .experience-item {
+        display: flex;
+        align-content: stretch;
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+        border: 0.0625rem solid #444c56;
+        border-radius: 10px;
+        margin-bottom: 4px;
+        box-sizing: border-box;
+    }
+
+    .experience-box {
+        display: flex;
+        padding: 16px;
+        width: 100% !important;
+        flex-direction: column;
+    }
+
+    .experience-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-family: var(--font-serif2);
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .experience-title p {
+        font-size: 16px;
+        font-family: var(--font-serif2);
+        color: #8D8D8D;
+        margin: 0;
+        padding: 0;
+    }
+
+    .experience-role {
+        font-size: 16px;
+        font-family: var(--font-serif2);
+        font-weight: bold;
+        color: #d0d0d0;
+        margin-bottom: 4px;
         padding: 0;
     }
 

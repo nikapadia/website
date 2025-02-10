@@ -51,7 +51,7 @@
         <div class="content-wrapper">
             <ol class="content">
                 <p class="about-me">
-                    Hello! I'm Nilay, a junior computer science student (technically I'm a senior by credits since I will gradute in December 2025) at Rensselaer Polytechnic Institute. I like to work on high-performate and scalable systems in any language but I'm most comfortable with C++, Python, and Go. I'm currently upgrading a custom CMS for The Polytechnic, RPI's student-run newspaper where I am have been the Editor in Chief since December 2024. 
+                    Hello! I'm Nilay, a junior computer science student (technically I'm a senior by credits since I will gradute in December 2025) at Rensselaer Polytechnic Institute. I like to work on high-performate and scalable systems in any language but I'm most comfortable with C++, Python, and Go. I'm currently upgrading a custom CMS for The Polytechnic, RPI's student-run newspaper where I have been the Editor in Chief since December 2024. 
                 </p>
             </ol>
         </div>
@@ -236,7 +236,7 @@
 		overflow: hidden;
 		display: inline-block;
 		vertical-align: middle;
-		border: 2px solid gray;
+        border: 4px solid #2f363f;
         object-fit: cover;
     }
 
@@ -292,7 +292,6 @@
     .experience-role {
         font-size: 16px;
         font-family: var(--font-serif2);
-        font-weight: bold;
         color: #d0d0d0;
         margin-bottom: 4px;
         padding: 0;
@@ -514,4 +513,32 @@
 			display: none;
 		} */
     }
+
+    @media (prefers-color-scheme: dark) {
+        /* .content-box {
+            border: 0.0625rem solid #444c56;
+        } */
+        .experience-role {
+            color: #d0d0d0;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        .cover-photo {
+            border: 4px solid #e0e0e0;
+        }
+        .content-item {
+            border: 0.0625rem solid #8D8D8D;
+        }
+        .about-me {
+            color: #22272e;
+        }
+        .content-description {
+            color: #22272e;
+        }
+        .experience-role {
+            color: #8D8D8D;
+        }
+    }
+
 </style>

@@ -7,12 +7,13 @@
 
 <div class="app">
 	<!-- <Navbar /> -->
+    <base href="/">
 
 	<main>
 		<!-- <Infopanel/> -->
 		<slot />
 	</main>
-	<Footer />
+	<!-- <Footer /> -->
 </div>
 
 <style>

@@ -1,5 +1,5 @@
 <script>
-    let url = 'https://drive.google.com/file/d/1kV1tS1W0SK8w33jzKzRljwdv_0egwwjl/view?usp=sharing';
+    let url = 'https://drive.google.com/file/d/1ytYO8BzXlcsTt6lENnVEVZqrdHU6QhzB/view?usp=drive_link';
 </script>
 
 <svelte:head>

@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
 
     import Icon from '@iconify/svelte';
     import icon_sun from '@iconify/icons-ph/sun';
@@ -10,7 +9,7 @@
 <header>
 	<nav>
 		<div class="name">
-			<a href="{base}/"> Nilay Kapadia </a>
+			<a href="/"> Nilay Kapadia </a>
 		</div>
 		<ul>
             <!-- <li class="darkmode-toggle">
@@ -23,7 +22,7 @@
 				<a href="{base}/">Home</a>
 			</li> -->
 			<li>
-				<a href="{base}/about">About</a>
+				<a href="/about">About</a>
 			</li>
 			<!-- <li>
 				<a href="{base}/resume">Resume</a>

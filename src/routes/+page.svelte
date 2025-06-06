@@ -51,7 +51,7 @@
         <div class="content-wrapper">
             <ol class="content">
                 <p class="about-me">
-                    Hello! I'm Nilay, a junior computer science student (technically I'm a senior by credits since I will gradute in December 2025) at Rensselaer Polytechnic Institute. I like to work on high-performate and scalable systems in any language but I'm most comfortable with C++, Python, and Go. I'm currently upgrading a custom CMS for The Polytechnic, RPI's student-run newspaper where I have been the Editor in Chief since December 2024. 
+                    Hello! I'm Nilay, a senior computer science student at Rensselaer Polytechnic Institute with a concentration in AI, ML, and data science. I know a bunch of languages and frameworks, including C++, Python, Go, JavaScript, TypeScript, and React. Since June 2025, I have been working as a Business Systems Engineering Intern at Alo Yoga.
                 </p>
             </ol>
         </div>
@@ -60,6 +60,18 @@
         </div>
         <div class="content-wrapper">
             <ol class="content">
+                <li class="experience-item-larger-width content-item">
+                    <div class="content-box" style="max-width: none;">
+                        <span class="content-title">
+                            <a href="https://aloyoga.com/" target="_blank" rel="noreferrer">Alo Yoga</a>
+                            <p>Jun 2025 — Present</p>
+                        </span>
+                        <p class="experience-role">Business Systems Engineering Intern</p>
+                        <p class="content-description">
+                            More to come!
+                        </p>
+                    </div>
+                </li>
                 <li class="experience-item-larger-width content-item">
                     <div class="content-box" style="max-width: none;">
                         <span class="content-title">

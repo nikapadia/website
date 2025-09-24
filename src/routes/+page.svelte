@@ -1,5 +1,7 @@
 <script>
-	import image_coverPhoto from '$lib/images/Headshot.png';
+    const image_coverPhoto = '/Headshot.png';
+
+    // import Infopanel from '../components/Infopanel.svelte';
 	import Icon from '@iconify/svelte';
     import Icon_RightCaret from '@iconify/icons-ph/caret-right-fill';
     import Icon_DownCaret from '@iconify/icons-ph/caret-down-fill';
@@ -41,9 +43,6 @@
         </div>
         <div class="info-box">
             <h1 class="name">Nilay Kapadia</h1>
-            <!-- <div>
-                <h2 class="subtitle">Junior CS student at <span title="Rensselaer Polytechnic Institute">RPI</span></h2>
-            </div> -->
         </div>
         <div class="section-title">
             <h2>About Me</h2>
@@ -51,7 +50,7 @@
         <div class="content-wrapper">
             <ol class="content">
                 <p class="about-me">
-                    Hello! I'm Nilay, a senior computer science student at Rensselaer Polytechnic Institute with a concentration in AI, ML, and data science. I know a bunch of languages and frameworks, including C++, Python, Go, JavaScript, TypeScript, and React. Since June 2025, I have been working as a Business Systems Engineering Intern at Alo Yoga.
+                    Hello! I'm Nilay, a senior computer science student at Rensselaer Polytechnic Institute with a concentration in AI, ML, and data science. I mainly like to work with C++, Python, Go, TypeScript, and React.
                 </p>
             </ol>
         </div>
@@ -64,11 +63,11 @@
                     <div class="content-box" style="max-width: none;">
                         <span class="content-title">
                             <a href="https://aloyoga.com/" target="_blank" rel="noreferrer">Alo Yoga</a>
-                            <p>Jun 2025 — Present</p>
+                            <p>Jun 2025 — Aug 2025</p>
                         </span>
-                        <p class="experience-role">Business Systems Engineering Intern</p>
+                        <p class="experience-role">Software Engineer Intern - Business Systems</p>
                         <p class="content-description">
-                            More to come!
+                            Created an SRE pipeline to monitor server and database performance which was fed into a Grafana dashboard. Developed an automated Python testing tool to simulate manufacturing pipelines, saving 1000+ developer hours per year. Built a GitHub app to automate deployment processes and check for proper database indexing. Made an AI chatbot interface with the OpenAI API using a RAG trained on the company’s codebase and documentation.
                         </p>
                     </div>
                 </li>

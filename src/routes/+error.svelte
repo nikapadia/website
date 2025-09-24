@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import Icon from '@iconify/svelte';
 	import icon_warning from '@iconify/icons-ph/warning-duotone';
-	import image_404 from '$lib/images/404.svg';
+	const image_404 = '/404.svg'; 
 </script>
 
 <section>
@@ -10,7 +10,7 @@
 		<img src={image_404} alt="404" class="error-img" width="256" />
 		<h1>{$page.status}</h1>
 		<p>Sorry, that page doesn't seem to exist.</p>
-		<a href="/">Why don't you head back home?</a>
+		<a href="/" style="text-decoration:underline; margin-top: 16px;">Why don't you head back home?</a>
 	</div>
 </section>
 

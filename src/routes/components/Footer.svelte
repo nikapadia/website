@@ -1,5 +1,5 @@
 <script>
-	import github from '$lib/images/github-mark-white.svg';
+	const github = '/github.svg';
 </script>
 
 <footer>

@@ -75,14 +75,6 @@
         padding: 0;
     }
 
-    .content-title p {
-        font-size: 16px;
-        font-family: var(--font-serif2);
-        color: #8D8D8D;
-        margin: 0;
-        padding: 0;
-    }
-
     .content-title a {
         color: #539bf5;
         text-decoration: none;

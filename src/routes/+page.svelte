@@ -262,62 +262,6 @@
         width: 100%;
     }
 
-    .content-item {
-        display: flex;
-        align-content: stretch;
-        padding-right: 8px !important;
-        padding-left: 8px !important;
-        border: 0.0625rem solid #444c56;
-        border-radius: 10px;
-        margin-bottom: 4px;
-        box-sizing: border-box;
-        width: 40%;
-    }
-
-    .content-box {
-        display: flex;
-        padding: 16px;
-        width: 100% !important;
-        flex-direction: column;
-        max-width: 440px;
-    }
-
-    .content-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 18px;
-        font-family: var(--font-serif2);
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .content-title p {
-        font-size: 16px;
-        font-family: var(--font-serif2);
-        color: #8D8D8D;
-        margin: 0;
-        padding: 0;
-    }
-
-    .content-title a {
-        color: #539bf5;
-        text-decoration: none;
-    }
-
-    .content-title a:hover {
-        text-decoration: underline;
-    }
-
-    .content-description {
-        font-size: 16px;
-        font-family: var(--font-serif2);
-        color: #8D8D8D;
-        margin: 0;
-        padding: 0;
-    }
-
     .contact-wrapper {
         display: flex;
         flex-direction: column;
@@ -355,10 +299,6 @@
         text-decoration: underline;
     }
 
-    /* Collapsible styles moved to WorkExperience.svelte */
-
-
-
 	@media (max-width: 768px) {
 		section {
             justify-content: center;
@@ -392,17 +332,10 @@
             flex-direction: column;
             width: 100%;
         }
-
-        .content-item {
-            width: 100%;
-        }
         
         .contact-wrapper {
             width: 80%;
-        }
-
-        /* Experience and collapsible styles moved to WorkExperience.svelte */
-        
+        }        
 
 		/* .text-box {
 			display: none;
@@ -413,23 +346,15 @@
         /* .content-box {
             border: 0.0625rem solid #444c56;
         } */
-        /* Experience styles moved to WorkExperience.svelte */
     }
 
     @media (prefers-color-scheme: light) {
         .cover-photo {
             border: 4px solid #e0e0e0;
         }
-        .content-item {
-            border: 0.0625rem solid #8D8D8D;
-        }
         .about-me {
             color: #22272e;
         }
-        .content-description {
-            color: #22272e;
-        }
-        /* Experience styles moved to WorkExperience.svelte */
     }
 
 </style>

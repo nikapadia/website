@@ -1,19 +1,81 @@
 <script>
     const image_coverPhoto = '/Headshot.png';
 
-    // import Infopanel from '../components/Infopanel.svelte';
-	import Icon from '@iconify/svelte';
-    import Icon_RightCaret from '@iconify/icons-ph/caret-right-fill';
-    import Icon_DownCaret from '@iconify/icons-ph/caret-down-fill';
+    import Projects from './components/Projects.svelte';
+    import WorkExperience from './components/WorkExperience.svelte';
 
-    import {slide} from 'svelte/transition';
+    const projectsData = [
+        {
+            title: "Operating System Simulator",
+            url: "",
+            description: "Created a C++ OS simulator for CPU scheduling algorithms including FCFS, SJF, SRT, and round robin with performance metrics for CPU utilization, wait times, and turnaround times"
+        },
+        {
+            title: "RPI Search Engine",
+            url: "",
+            description: "Built a search engine ranking microservice with that covers all RPI domains. Integrated the service with a Redis cache and indexing, link analysis, and metrics microservices"
+        },
+        {
+            title: "Pipeline",
+            url: "https://github.com/thepoly/pipeline",
+            description: "Rewriting 6-year-old CMS for The Polytechnic, RPI's student-run newspaper. Pipeline is built with Django, Wagtail, and Sass."
+        },
+        {
+            title: "PolyCal",
+            url: "https://github.com/nikapadia/polycal",
+            description: "PolyCal is calendar app that centralizes every event on RPI's campus into one place. It is built with React and Go."
+        },
+        {
+            title: "Super Snippets",
+            url: "https://nikapadia.github.io/SuperSnippets",
+            description: "Super Snippets is a React app that turns code snippets into visually appealing images for presentations and technical demonstrations."
+        },
+        {
+            title: "Degree Doctor",
+            url: "https://degreedoctor.org",
+            description: "Degree Doctor is a Vue app that helps students create and manage a plan for their college degree."
+        },
+        {
+            title: "Wordle Together",
+            url: "https://wordletogether.com",
+            description: "Wordle Together is a multiplayer version of Wordle where two players compete to guess the word first."
+        }
+    ];
 
-    let isCollapsibleOpen = false;
-    function toggleCollapsible() {
-        console.log("Toggling collapsible");
-        isCollapsibleOpen = !isCollapsibleOpen;
-    }
-
+    const experienceData = [
+        {
+            company: "Alo Yoga",
+            url: "https://aloyoga.com/",
+            period: "Jun 2025 — Aug 2025",
+            role: "Software Engineer Intern - Business Systems",
+            description: "Created an SRE pipeline to monitor server and database performance which was fed into a Grafana dashboard. Developed an automated Python testing tool to simulate manufacturing pipelines, saving 1000+ developer hours per year. Built a GitHub app to automate deployment processes and check for proper database indexing. Made an AI chatbot interface with the OpenAI API using a RAG trained on the company's codebase and documentation."
+        },
+        {
+            company: "Doron Precision Systems",
+            url: "https://doronprecision.com/",
+            period: "Jun 2024 — Aug 2024",
+            role: "Software Engineer Intern",
+            description: "Built a custom AI traffic system in Unreal Engine 5 with C++ that allows for thousands of vehicles to navigate autonomously, avoid each other, safely merge into lanes and onto highways, and follow right of way at intersections.",
+            hasCollapsible: true,
+            demoVideos: [
+                {
+                    title: "VehicleAI System",
+                    videoUrl: "https://www.youtube.com/embed/d42bJzZ5OIY?si=NX8weO74H_0jBSO6"
+                },
+                {
+                    title: "VehicleAI Editor Mode Plugin",
+                    videoUrl: "https://www.youtube.com/embed/lOH1_jIL3ZY?si=-JcASWKwLd6boaMo"
+                }
+            ]
+        },
+        {
+            company: "Bozu",
+            url: "https://bozu.us/",
+            period: "May 2023 — Aug 2023",
+            role: "Software Engineer Intern",
+            description: "Built a proof-of-concept system using Microsoft's Graph API and TypeScript to allow users to sync calendar events between Outlook and the platform. Added functionality to create Bozu meeting within Outlook through a custom Office plugin. Developed a custom Slack app to let users create a Bozu meeting in Slack along with a MySQL and TypeScript system to demonstrate account binding between the two services."
+        }
+    ];
 </script>
 
 <svelte:head>
@@ -54,133 +116,17 @@
                 </p>
             </ol>
         </div>
-        <div class="section-title">
+                <div class="section-title">
             <h2>Work Experience</h2>
         </div>
         <div class="content-wrapper">
-            <ol class="content">
-                <li class="experience-item-larger-width content-item">
-                    <div class="content-box" style="max-width: none;">
-                        <span class="content-title">
-                            <a href="https://aloyoga.com/" target="_blank" rel="noreferrer">Alo Yoga</a>
-                            <p>Jun 2025 — Aug 2025</p>
-                        </span>
-                        <p class="experience-role">Software Engineer Intern - Business Systems</p>
-                        <p class="content-description">
-                            Created an SRE pipeline to monitor server and database performance which was fed into a Grafana dashboard. Developed an automated Python testing tool to simulate manufacturing pipelines, saving 1000+ developer hours per year. Built a GitHub app to automate deployment processes and check for proper database indexing. Made an AI chatbot interface with the OpenAI API using a RAG trained on the company’s codebase and documentation.
-                        </p>
-                    </div>
-                </li>
-                <li class="experience-item-larger-width content-item">
-                    <div class="content-box" style="max-width: none;">
-                        <span class="content-title">
-                            <a href="https://doronprecision.com/" target="_blank" rel="noreferrer">Doron Precision Systems</a>
-                            <p>Jun 2024 — Aug 2024</p>
-                        </span>
-                        <p class="experience-role">Software Engineer Intern</p>
-                        <p class="content-description">
-                            Built a custom AI traffic system in Unreal Engine 5 with C++ that allows for thousands of vehicles to navigate autonomously, avoid each other, safely merge into lanes and onto highways, and follow right of way at intersections.
-                        </p>
-                        <div class="collapsible">
-                            <button on:click={toggleCollapsible} class="collapsible-button">
-                                {#if isCollapsibleOpen}
-                                    <Icon icon={Icon_DownCaret} width="24" height="24" color="#8D8D8D"/>
-                                {:else}
-                                    <Icon icon={Icon_RightCaret} width="24" height="24" color="#8D8D8D"/>
-                                {/if}
-                                <p class="content-description">Click to view demos</p>
-                              </button>
-                            {#if isCollapsibleOpen}
-                                <div class="collapsible-content" transition:slide={{duration:300}}>
-                                    <div class="collapsible-content-item">
-                                        <p class="content-description">Demo 1 - VehicleAI System</p>
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d42bJzZ5OIY?si=NX8weO74H_0jBSO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="collapsible-content-item">
-                                        <p class="content-description">Demo 2 - VehicleAI Editor Mode Plugin</p>
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lOH1_jIL3ZY?si=-JcASWKwLd6boaMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            {/if}
-                        </div>
-                    </div>
-                </li>
-                <li class="content-item experience-item-larger-width">
-                    <div class="content-box" style="max-width: none;">
-                        <span class="content-title">
-                            <a href="https://bozu.us/" target="_blank" rel="noreferrer">Bozu</a>
-                            <p>May 2023 — Aug 2023</p>
-                        </span>
-                        <p class="experience-role">Software Engineer Intern</p>
-                        <p class="content-description">
-                            Built a proof-of-concept system using Microsoft’s Graph API and TypeScript to allow users to sync calendar events between Outlook and the platform. 
-                            Added functionality to create Bozu meeting within Outlook through a custom Office plugin. Developed a custom Slack app to let users create a Bozu meeting in Slack along with a MySQL and TypeScript system to demonstrate account binding between the two services.
-                        </p>
-                    </div>
-                </li>
-            </ol>
+            <WorkExperience experiences={experienceData} />
         </div>
         <div class="section-title">
             <h2>Projects</h2>
         </div>
         <div class="content-wrapper">
-            <ol class="content">
-                <li class="content-item">
-                    <div class="content-box">
-                        <span class="content-title">
-                            <a href="https://github.com/thepoly/pipeline" target="_blank" rel="noreferrer">Pipeline</a>
-                            <p>Aug 2024 — Present</p>
-                        </span>
-                        <p class="content-description">
-                            Rewriting 6-year-old CMS for The Polytechnic, RPI's student-run newspaper. Pipeline is built with Django, Wagtail, and Sass.
-                        </p>
-                    </div>
-                </li>
-                <li class="content-item">
-                    <div class="content-box">
-                        <span class="content-title">
-                            <a href="https://github.com/nikapadia/polycal" target="_blank" rel="noreferrer">PolyCal</a>
-                            <p>Jan 2024 — May 2024</p>
-                        </span>
-                        <p class="content-description">
-                            PolyCal is calendar app that centralizes every event on RPI's campus into one place. It is built with React and Go.
-                        </p>
-                    </div>
-                </li>
-                <li class="content-item">
-                    <div class="content-box">
-                        <span class="content-title">
-                            <a href="https://nikapadia.github.io/SuperSnippets" target="_blank" rel="noreferrer">Super Snippets</a>
-                            <p>Sep 2023 — Dec 2023</p>
-                        </span>
-                        <p class="content-description">
-                            Super Snippets is a React app that turns code snippets into visually appealing images for presentations and technical demonstrations.
-                        </p>
-                    </div>
-                </li>
-                <li class="content-item">
-                    <div class="content-box">
-                        <span class="content-title">
-                            <a href="https://degreedoctor.org" target="_blank" rel="noreferrer">Degree Doctor</a>
-                            <p>Jan 2023 — May 2023</p>
-                        </span>
-                        <p class="content-description">
-                            Degree Doctor is a Vue app that helps students create and manage a plan for their college degree.
-                        </p>
-                    </div>
-                </li>
-                <li class="content-item">
-                    <div class="content-box">
-                        <span class="content-title">
-                            <a href="https://wordletogether.com" target="_blank" rel="noreferrer">Wordle Together</a>
-                            <p>Jan 2022 — Jan 2023</p>
-                        </span>
-                        <p class="content-description">
-                            Wordle Together is a multiplayer version of Wordle where two players compete to guess the word first.
-                        </p>
-                    </div>
-                </li>                
-            </ol>
+            <Projects projects={projectsData} />
         </div>
         <div class="section-title">
             <h2>Contact</h2>
@@ -300,17 +246,7 @@
         padding: 0;
     }
 
-    .experience-role {
-        font-size: 16px;
-        font-family: var(--font-serif2);
-        color: #d0d0d0;
-        margin-bottom: 4px;
-        padding: 0;
-    }
-
-    .experience-item-larger-width {
-        width: 80% !important;
-    }
+    /* Experience styles moved to WorkExperience.svelte */
 
     .content {
         display: flex;
@@ -419,40 +355,7 @@
         text-decoration: underline;
     }
 
-    .collapsible {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .collapsible-button {
-        display: flex;
-        align-items: center;
-        background: none;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-        width: 100%;
-        height: 100%;
-        max-height: 24px;
-        text-align: left;
-        padding-left: 0;
-        gap: 8px;
-        margin-top: 16px;
-    }
-
-    .collapsible-content {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        margin-top: 8px;
-    }
-
-    .collapsible-content-item {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
+    /* Collapsible styles moved to WorkExperience.svelte */
 
 
 
@@ -498,26 +401,7 @@
             width: 80%;
         }
 
-        .experience-item-larger-width {
-            width: 100% !important;
-        }
-
-        .collapsible-content {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .collapsible-content-item {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        iframe {
-            width: 100%;
-            height: auto;
-        }
+        /* Experience and collapsible styles moved to WorkExperience.svelte */
         
 
 		/* .text-box {
@@ -529,9 +413,7 @@
         /* .content-box {
             border: 0.0625rem solid #444c56;
         } */
-        .experience-role {
-            color: #d0d0d0;
-        }
+        /* Experience styles moved to WorkExperience.svelte */
     }
 
     @media (prefers-color-scheme: light) {
@@ -547,9 +429,7 @@
         .content-description {
             color: #22272e;
         }
-        .experience-role {
-            color: #8D8D8D;
-        }
+        /* Experience styles moved to WorkExperience.svelte */
     }
 
 </style>

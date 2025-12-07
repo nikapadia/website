@@ -11,35 +11,25 @@
             description: "Created a C++ OS simulator for CPU scheduling algorithms including FCFS, SJF, SRT, and round robin with performance metrics for CPU utilization, wait times, and turnaround times"
         },
         {
+            title: "Massively Parallel Flocking Simulation",
+            url: "",
+            description: "Developed a massively parallel flocking simulation using CUDA and MPI to simulate real-time flocking behavior of millions of agents on RPI's AiMOS supercomputer."
+        },
+        {
             title: "RPI Search Engine",
             url: "",
             description: "Built a search engine ranking microservice with that covers all RPI domains. Integrated the service with a Redis cache and indexing, link analysis, and metrics microservices"
         },
         {
-            title: "Pipeline",
-            url: "https://github.com/thepoly/pipeline",
-            description: "Rewriting 6-year-old CMS for The Polytechnic, RPI's student-run newspaper. Pipeline is built with Django, Wagtail, and Sass."
-        },
-        {
             title: "PolyCal",
-            url: "https://github.com/nikapadia/polycal",
+            url: "",
             description: "PolyCal is calendar app that centralizes every event on RPI's campus into one place. It is built with React and Go."
         },
         {
-            title: "Super Snippets",
-            url: "https://nikapadia.github.io/SuperSnippets",
-            description: "Super Snippets is a React app that turns code snippets into visually appealing images for presentations and technical demonstrations."
-        },
-        {
             title: "Degree Doctor",
-            url: "https://degreedoctor.org",
+            url: "",
             description: "Degree Doctor is a Vue app that helps students create and manage a plan for their college degree."
         },
-        {
-            title: "Wordle Together",
-            url: "https://wordletogether.com",
-            description: "Wordle Together is a multiplayer version of Wordle where two players compete to guess the word first."
-        }
     ];
 
     const experienceData = [
@@ -47,15 +37,17 @@
             company: "Alo Yoga",
             url: "https://aloyoga.com/",
             period: "Jun 2025 — Aug 2025",
-            role: "Software Engineer Intern - Business Systems",
-            description: "Created an SRE pipeline to monitor server and database performance which was fed into a Grafana dashboard. Developed an automated Python testing tool to simulate manufacturing pipelines, saving 1000+ developer hours per year. Built a GitHub app to automate deployment processes and check for proper database indexing. Made an AI chatbot interface with the OpenAI API using a RAG trained on the company's codebase and documentation."
+            role: "Software Engineer Intern",
+            location: "Los Angeles, CA",
+            description: "As part of the Business Systems team, I built an automated Python testing tool that simulated manufacturing pipelines and saved 500+ developer hours annually. I created an SRE monitoring pipeline with Grafana integration, built a GitHub app to automate deployments and check database indexing, and developed a RAG-based AI chatbot trained on the company’s codebase. I also fixed a data-visibility bug affecting a manufacturing dashboard."
         },
         {
             company: "Doron Precision Systems",
             url: "https://doronprecision.com/",
             period: "Jun 2024 — Aug 2024",
             role: "Software Engineer Intern",
-            description: "Built a custom AI traffic system in Unreal Engine 5 with C++ that allows for thousands of vehicles to navigate autonomously, avoid each other, safely merge into lanes and onto highways, and follow right of way at intersections.",
+            location: "Binghamton, NY",
+            description: "Built a custom AI traffic system in Unreal Engine 5 with C++ that allows for thousands of vehicles to navigate autonomously, avoid each other, safely merge into lanes and onto highways, and follow right of way at intersections. I also created an internal tool to help build road networks along with a custom Bézier curve implementation.",
             hasCollapsible: true,
             demoVideos: [
                 {
@@ -73,7 +65,8 @@
             url: "https://bozu.us/",
             period: "May 2023 — Aug 2023",
             role: "Software Engineer Intern",
-            description: "Built a proof-of-concept system using Microsoft's Graph API and TypeScript to allow users to sync calendar events between Outlook and the platform. Added functionality to create Bozu meeting within Outlook through a custom Office plugin. Developed a custom Slack app to let users create a Bozu meeting in Slack along with a MySQL and TypeScript system to demonstrate account binding between the two services."
+            location: "Remote",
+            description: "Built an Outlook plugin to create Bozu VOIP meetings within Outlook and synchronize them. Developed a Slack integration that let users create and manage Bozu meeting in Slack."
         }
     ];
 </script>
@@ -112,7 +105,7 @@
         <div class="content-wrapper">
             <ol class="content">
                 <p class="about-me">
-                    Hello! I'm Nilay, a senior computer science student at Rensselaer Polytechnic Institute with a concentration in AI, ML, and data science. I mainly like to work with C++, Python, Go, TypeScript, and React.
+                    Hello! I'm Nilay, a senior computer science student at Rensselaer Polytechnic Institute with a concentration in AI, ML, and data science. I mainly like to work with C++, Python, Go, TypeScript, and React. I'm looking for a full-time software engineering starting Winter/Spring 2026.
                 </p>
             </ol>
         </div>

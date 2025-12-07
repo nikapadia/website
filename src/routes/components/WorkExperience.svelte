@@ -6,11 +6,12 @@
     
     /**
      * @typedef {Object} ExperienceItem
-     * @property {string} company - Company name
-     * @property {string} url - Company URL
-     * @property {string} period - Employment period
-     * @property {string} role - Job title
-     * @property {string} description - Job description
+     * @property {string} company
+     * @property {string} url
+     * @property {string} period
+     * @property {string} role
+     * @property {string} location
+     * @property {string} description
      * @property {boolean} [hasCollapsible] - Whether this item has collapsible content
      * @property {Array<{title: string, videoUrl: string}>} [demoVideos] - Demo videos if collapsible
      */
@@ -33,7 +34,10 @@
                     <a href={experience.url} target="_blank" rel="noreferrer">{experience.company}</a>
                     <p>{experience.period}</p>
                 </span>
-                <p class="experience-role">{experience.role}</p>
+                <div class="experience-details">
+                    <p class="experience-role">{experience.role}</p>
+                    <p class="experience-location">{experience.location}</p>
+                </div>
                 <p class="content-description">
                     {experience.description}
                 </p>
@@ -136,12 +140,23 @@
         padding: 0;
     }
 
-    .experience-role {
+    .experience-details {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .experience-role,
+    .experience-location {
         font-size: 16px;
         font-family: var(--font-serif2);
         color: #d0d0d0;
         margin-bottom: 4px;
         padding: 0;
+    }
+
+    .experience-location {
+        color: #8D8D8D;
     }
 
     .experience-item-larger-width {

@@ -18,7 +18,7 @@
                     {#if project.url && project.url !== ""}
                         <a href={project.url} target="_blank" rel="noreferrer">{project.title}</a>
                     {:else}
-                        <span style="color: #539bf5;">{project.title}</span>
+                        <span style="">{project.title}</span>
                     {/if}
                 </span>
                 <p class="content-description">

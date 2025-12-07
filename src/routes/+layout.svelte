@@ -1,8 +1,17 @@
 <script lang="ts">
+	import posthog from 'posthog-js';
+	import { browser } from '$app/environment';
+	import { beforeNavigate, afterNavigate } from '$app/navigation';
+
 	// import Navbar from './components/navbar.svelte';
 	import Footer from './components/Footer.svelte';
 	// import Infopanel from './components/infopanel.svelte';
 	import './styles.css';
+
+	if (browser) {
+		beforeNavigate(() => posthog.capture('$pageleave'));
+		afterNavigate(() => posthog.capture('$pageview'));
+	}
 </script>
 
 <div class="app">

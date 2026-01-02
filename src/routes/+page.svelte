@@ -75,15 +75,14 @@
 	<title>Nilay Kapadia</title>
 	<meta
 		name="description"
-		content="Hey! I'm Nilay, a junior computer science student as Rensselaer Polytechnic Institute."
+		content="Hi, I'm Nilay! I just graduated from Rensselaer Polytechnic Institute with a bachelor's in Computer Science. I'm looking for a full-time software engineering position working with C++, Python, Go, TypeScript, or React."
 	/>
-	<!-- Twitter -->
 	<meta property="twitter:card" content={image_coverPhoto} />
 	<meta property="twitter:url" content="https://nikapadia.com/" />
 	<meta property="twitter:title" content="Nilay Kapadia" />
 	<meta
 		property="twitter:description"
-		content="Hey! I'm Nilay, a junior computer science student as Rensselaer Polytechnic Institute."
+		content="Hi, I'm Nilay! I just graduated from Rensselaer Polytechnic Institute with a bachelor's in Computer Science. I'm looking for a full-time software engineering position working with C++, Python, Go, TypeScript, or React."
 	/>
 	<meta property="twitter:image" content={image_coverPhoto} />
 </svelte:head>
@@ -105,7 +104,7 @@
         <div class="content-wrapper">
             <ol class="content">
                 <p class="about-me">
-                    Hello! I'm Nilay, a senior computer science student at Rensselaer Polytechnic Institute with a concentration in AI, ML, and data science. I mainly like to work with C++, Python, Go, TypeScript, and React. I'm looking for a full-time software engineering starting Winter/Spring 2026.
+                    Hi, I'm Nilay! I just graduated from Rensselaer Polytechnic Institute with a bachelor's in Computer Science with a concentration in AI, ML, and data science. I'm looking for a full-time software engineering position. I mainly enjoy working with C++, Python, Go, TypeScript, or React.
                 </p>
             </ol>
         </div>

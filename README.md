@@ -1,3 +1,1 @@
-# Hello!
-
-Hi, my name is Nilay Kapadia and I am a senior computer science student at Rensselaer Polytechnic Institute. This is just a personal website/portfolio I've put together.
+website
